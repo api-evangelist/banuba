@@ -1,0 +1,38 @@
+aid: banuba
+name: Banuba
+description: >-
+  Banuba provides the Beauty API designed to help you integrate face
+  modification and touch-up functionality into your app. The beautification
+  features fit into a variety of use cases, i.e. live streaming, video chats and
+  video conferencing apps to selfie editors and portrait retouching software. It
+  aims to make the user feel comfortable about the camera experience 
+type: Index
+position: Consumer
+access: 3rd-Party
+image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+tags:
+  - API
+created: '2024-12-16'
+modified: '2024-12-16'
+url: >-
+  https://raw.githubusercontent.com/api-evangelist/banuba/refs/heads/main/apis.yml
+specificationVersion: '0.19'
+apis:
+  - aid: banuba:banuba
+    name: Banuba
+    description: >-
+      Banuba provides the Beauty API designed to help you integrate face
+      modification and touch-up functionality into your app. The beautification
+      features fit into a variety of use cases, i.e. live streaming, video chats
+      and video conferencing apps to selfie editors and portrait retouching
+      software. It aims to make the user feel comfortable about the camera
+      experience 
+    humanURL: ' https://docs.banuba.com'
+    tags:
+      - API
+    properties:
+      - type: Documentation
+        url: ' https://docs.banuba.com'
+maintainers:
+  - FN: Kin Lane
+    email: info@apievangelist.com
