@@ -4,8 +4,7 @@ url: >-
 apis:
   - aid: banuba:banuba
     name: Banuba
-    tags:
-      - API
+    tags: []
     humanURL: ' https://docs.banuba.com'
     properties:
       - url: ' https://docs.banuba.com'
