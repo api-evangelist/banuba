@@ -1,0 +1,52 @@
+{
+  "name": "Banuba Face AR SDK Structure",
+  "description": "Core data structure for Banuba AR SDK configuration and effect application.",
+  "structure": {
+    "SDKConfig": {
+      "clientToken": "string - License token for SDK initialization",
+      "effectPlayer": {
+        "renderWidth": "integer - Width of the render output",
+        "renderHeight": "integer - Height of the render output",
+        "renderMode": "string - Rendering mode: camera, video, image"
+      },
+      "features": {
+        "faceAR": "boolean - Enable face AR effects",
+        "beautyFilter": "boolean - Enable beauty filter processing",
+        "backgroundSegmentation": "boolean - Enable background segmentation",
+        "virtualTryOn": "boolean - Enable virtual try-on"
+      }
+    },
+    "FaceTrackingResult": {
+      "faces": [
+        {
+          "faceId": "integer - Unique face identifier",
+          "landmarks": [
+            {
+              "x": "number - X coordinate (normalized 0-1)",
+              "y": "number - Y coordinate (normalized 0-1)",
+              "z": "number - Z depth coordinate"
+            }
+          ],
+          "boundingBox": {
+            "x": "number",
+            "y": "number",
+            "width": "number",
+            "height": "number"
+          },
+          "attributes": {
+            "age": "number - Estimated age",
+            "gender": "string - Detected gender: male, female",
+            "emotion": "string - Detected emotion: happy, sad, neutral, surprised, angry"
+          }
+        }
+      ]
+    },
+    "EffectRequest": {
+      "effectId": "string - Effect identifier",
+      "params": {
+        "intensity": "number - Effect intensity 0-1",
+        "color": "string - Hex color override"
+      }
+    }
+  }
+}

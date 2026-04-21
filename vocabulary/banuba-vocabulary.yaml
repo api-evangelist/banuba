@@ -1,0 +1,36 @@
+vocabulary:
+  name: Banuba AR & AI SDK Vocabulary
+  description: Terms and concepts used in the Banuba Face AR SDK and related AI-powered augmented reality products.
+  terms:
+    - term: Face AR SDK
+      definition: Banuba's core augmented reality SDK providing real-time face tracking, AR effects, and beauty filters for mobile, web, and desktop platforms.
+    - term: Face Tracking
+      definition: Real-time detection and tracking of facial landmarks using machine learning models for accurate AR effect placement.
+    - term: AR Effect
+      definition: An augmented reality overlay applied to a user's face in real time, such as masks, filters, glasses, or makeup.
+    - term: Beauty Filter
+      definition: AI-powered image processing that applies skin smoothing, face reshaping, eye enlargement, and cosmetic enhancements.
+    - term: Background Segmentation
+      definition: Real-time separation of the foreground subject from the background for replacement or blurring effects.
+    - term: Virtual Try-On
+      definition: Technology enabling users to visualize makeup, glasses, accessories, or hair color on their face using AR.
+    - term: Face Liveness
+      definition: Anti-spoofing technology that verifies a face is real and present rather than a photo or video replay.
+    - term: Face Recognition
+      definition: Biometric identification of individuals by analyzing facial features.
+    - term: Effect Player
+      definition: Banuba's runtime engine that renders AR effects on live camera feeds or video content.
+    - term: Banuba Studio
+      definition: A no-code tool for creating and customizing AR effects compatible with the Banuba Effect Player.
+    - term: Video Editor SDK
+      definition: Banuba's white-label video and photo editing SDK with AI features like auto-clipping and captions.
+    - term: Web AR SDK
+      definition: Browser-based AR technology using WebGL 2.0 for delivering face effects without native app installation.
+    - term: Avatar SDK
+      definition: Banuba technology for creating and animating 3D digital avatars driven by facial expressions.
+    - term: TINT
+      definition: Banuba's AR Try-On Platform for virtual cosmetics, eyewear, and accessories try-on in e-commerce.
+    - term: Morphing
+      definition: Smooth deformation of 3D geometry used in AR effects for realistic face shape changes.
+    - term: Physics-Based Rendering
+      definition: Realistic rendering technique used in Banuba's 3D AR effects engine for accurate light simulation.

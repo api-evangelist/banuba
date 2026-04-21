@@ -1,0 +1,73 @@
+rules:
+  banuba-face-ar-sdk-has-documentation:
+    description: Banuba Face AR SDK APIs must have documentation.
+    message: "{{description}}"
+    severity: error
+    given: "$.apis[*]"
+    then:
+      field: properties
+      function: schema
+      functionOptions:
+        schema:
+          type: array
+          contains:
+            type: object
+            properties:
+              type:
+                const: Documentation
+            required:
+              - type
+
+  banuba-api-has-description:
+    description: All Banuba API entries must have a description.
+    message: "{{description}}"
+    severity: error
+    given: "$.apis[*]"
+    then:
+      field: description
+      function: truthy
+
+  banuba-api-has-name:
+    description: All Banuba API entries must have a name.
+    message: "{{description}}"
+    severity: error
+    given: "$.apis[*]"
+    then:
+      field: name
+      function: truthy
+
+  banuba-api-has-human-url:
+    description: All Banuba API entries must have a humanURL.
+    message: "{{description}}"
+    severity: error
+    given: "$.apis[*]"
+    then:
+      field: humanURL
+      function: truthy
+
+  banuba-api-has-tags:
+    description: All Banuba API entries must have tags.
+    message: "{{description}}"
+    severity: warn
+    given: "$.apis[*]"
+    then:
+      field: tags
+      function: truthy
+
+  banuba-apis-json-has-name:
+    description: Banuba APIs.json must have a name.
+    message: "{{description}}"
+    severity: error
+    given: "$"
+    then:
+      field: name
+      function: truthy
+
+  banuba-apis-json-has-description:
+    description: Banuba APIs.json must have a description.
+    message: "{{description}}"
+    severity: error
+    given: "$"
+    then:
+      field: description
+      function: truthy

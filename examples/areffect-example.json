@@ -1,0 +1,9 @@
+{
+  "effectId": "cat_face",
+  "name": "Cat Face",
+  "category": "mask",
+  "previewUrl": "https://cdn.banuba.com/effects/previews/cat_face.png",
+  "effectUrl": "https://cdn.banuba.com/effects/cat_face.zip",
+  "platforms": ["iOS", "Android", "Web"],
+  "tags": ["animal", "fun", "face-swap"]
+}

@@ -13,7 +13,7 @@ type: Contract
 image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
 access: 3rd-Party
 created: '2024-12-16'
-modified: '2026-04-19'
+modified: '2026-04-21'
 position: Consuming
 description: >-
   Banuba is an AR and AI technology company providing the Face AR SDK for augmented reality
@@ -44,7 +44,40 @@ apis:
       for mobile (iOS/Android), web, and desktop applications. The SDK includes real-time
       face detection, 3D face tracking, background segmentation, and a library of
       customizable AR effects and beauty filters. Integration is via native SDK rather
-      than REST API.
+      than REST API. Tracks up to 9 faces simultaneously.
+  - aid: banuba:video-editor-sdk
+    name: Banuba Video Editor SDK
+    tags:
+      - Video Editing
+      - AI
+      - White-Label
+      - SDK
+    humanURL: https://www.banuba.com/video-editor-sdk
+    properties:
+      - url: https://docs.banuba.com/ve-sdk/
+        type: Documentation
+      - url: https://www.banuba.com/video-editor-sdk
+        type: Website
+    description: >-
+      Banuba Video Editor SDK is a complete white-label video and photo editing solution
+      for iOS and Android with AI features including auto-clipping, captions, beauty
+      filters, AR effects, and music integration.
+  - aid: banuba:face-liveness-sdk
+    name: Banuba Face Liveness SDK
+    tags:
+      - Liveness Detection
+      - Biometrics
+      - Security
+      - Identity Verification
+    humanURL: https://www.banuba.com/face-liveness
+    properties:
+      - url: https://docs.banuba.com/face-liveness/
+        type: Documentation
+      - url: https://www.banuba.com/face-liveness
+        type: Website
+    description: >-
+      Banuba Face Liveness SDK provides anti-spoofing technology that verifies a face
+      is real and present in real time, used for identity verification and access control.
 common:
   - type: Website
     url: https://www.banuba.com/
@@ -64,6 +97,14 @@ common:
   - type: PrivacyPolicy
     url: https://www.banuba.com/privacy-policy
     name: Privacy Policy
+  - type: SpectralRules
+    url: rules/banuba-spectral-rules.yml
+  - type: Vocabulary
+    url: vocabulary/banuba-vocabulary.yaml
+  - type: NaftikoCapability
+    url: capabilities/face-ar.yaml
+  - type: JSON-LD
+    url: json-ld/banuba-context.jsonld
   - name: Features
     type: Features
     data:

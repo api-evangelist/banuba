@@ -1,0 +1,48 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://api-evangelist.github.io/banuba/json-schema/beautyfilter-schema.json",
+  "title": "BeautyFilter",
+  "description": "Settings for Banuba beauty filter processing.",
+  "type": "object",
+  "properties": {
+    "skinSmoothing": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 1,
+      "description": "Skin smoothing intensity (0 = off, 1 = maximum)."
+    },
+    "faceSlimming": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 1,
+      "description": "Face slimming intensity."
+    },
+    "eyeEnlarging": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 1,
+      "description": "Eye enlarging intensity."
+    },
+    "teethWhitening": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 1,
+      "description": "Teeth whitening intensity."
+    },
+    "lipstickColor": {
+      "type": "string",
+      "pattern": "^#[0-9A-Fa-f]{6}$",
+      "description": "Hex color for virtual lipstick."
+    },
+    "blushIntensity": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 1,
+      "description": "Blush effect intensity."
+    },
+    "eyebrowStyle": {
+      "type": "string",
+      "description": "Eyebrow style preset name."
+    }
+  }
+}

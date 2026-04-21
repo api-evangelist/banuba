@@ -1,0 +1,67 @@
+{
+  "@context": {
+    "@version": 1.1,
+    "banuba": "https://www.banuba.com/vocab/",
+    "schema": "https://schema.org/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "FaceARSDK": {
+      "@id": "banuba:FaceARSDK",
+      "@type": "@id"
+    },
+    "AREffect": {
+      "@id": "banuba:AREffect",
+      "@type": "@id"
+    },
+    "BeautyFilter": {
+      "@id": "banuba:BeautyFilter",
+      "@type": "@id"
+    },
+    "FaceTracking": {
+      "@id": "banuba:FaceTracking",
+      "@type": "@id"
+    },
+    "BackgroundSegmentation": {
+      "@id": "banuba:BackgroundSegmentation",
+      "@type": "@id"
+    },
+    "VirtualTryOn": {
+      "@id": "banuba:VirtualTryOn",
+      "@type": "@id"
+    },
+    "FaceLiveness": {
+      "@id": "banuba:FaceLiveness",
+      "@type": "@id"
+    },
+    "VideoEditorSDK": {
+      "@id": "banuba:VideoEditorSDK",
+      "@type": "@id"
+    },
+    "AvatarSDK": {
+      "@id": "banuba:AvatarSDK",
+      "@type": "@id"
+    },
+    "effectId": {
+      "@id": "banuba:effectId",
+      "@type": "xsd:string"
+    },
+    "platform": {
+      "@id": "banuba:platform",
+      "@type": "xsd:string"
+    },
+    "faceCount": {
+      "@id": "banuba:faceCount",
+      "@type": "xsd:integer"
+    },
+    "isLive": {
+      "@id": "banuba:isLive",
+      "@type": "xsd:boolean"
+    },
+    "confidence": {
+      "@id": "banuba:confidence",
+      "@type": "xsd:decimal"
+    },
+    "name": "schema:name",
+    "description": "schema:description",
+    "url": "schema:url"
+  }
+}

@@ -1,0 +1,85 @@
+name: Face AR & Beauty Filters
+description: >-
+  Naftiko capability for Banuba Face AR SDK: real-time augmented reality face effects,
+  beauty filters, virtual try-on, and background segmentation across mobile, web, and
+  desktop platforms.
+version: '1.0'
+provider: Banuba
+category: Augmented Reality
+tags:
+  - AR
+  - Augmented Reality
+  - Beauty Filters
+  - Face Tracking
+  - Virtual Try-On
+  - Video Processing
+humanURL: https://docs.banuba.com/far-sdk/
+actions:
+  - name: Apply Face AR Effect
+    description: Apply a real-time AR effect (mask, filter, accessory) to a live camera feed or video.
+    inputs:
+      - name: videoFrame
+        type: MediaFrame
+        required: true
+      - name: effectId
+        type: string
+        required: true
+    outputs:
+      - name: processedFrame
+        type: MediaFrame
+  - name: Apply Beauty Filter
+    description: Apply skin smoothing, face reshaping, and makeup filters to a video frame.
+    inputs:
+      - name: videoFrame
+        type: MediaFrame
+        required: true
+      - name: beautySettings
+        type: BeautySettings
+        required: true
+    outputs:
+      - name: processedFrame
+        type: MediaFrame
+  - name: Segment Background
+    description: Remove or replace the background in a video frame using face segmentation.
+    inputs:
+      - name: videoFrame
+        type: MediaFrame
+        required: true
+      - name: backgroundImage
+        type: MediaFrame
+        required: false
+    outputs:
+      - name: processedFrame
+        type: MediaFrame
+  - name: Virtual Try-On
+    description: Overlay virtual makeup, glasses, or accessories on a detected face.
+    inputs:
+      - name: videoFrame
+        type: MediaFrame
+        required: true
+      - name: productId
+        type: string
+        required: true
+    outputs:
+      - name: processedFrame
+        type: MediaFrame
+  - name: Face Liveness Check
+    description: Verify that a detected face is live and not a spoof attempt.
+    inputs:
+      - name: videoFrame
+        type: MediaFrame
+        required: true
+    outputs:
+      - name: isLive
+        type: boolean
+      - name: confidence
+        type: number
+platforms:
+  - iOS
+  - Android
+  - Web (HTML5)
+  - Windows
+  - macOS
+  - Unity
+  - Flutter
+  - React Native

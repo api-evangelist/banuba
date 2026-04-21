@@ -1,0 +1,48 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://api-evangelist.github.io/banuba/json-schema/areffect-schema.json",
+  "title": "AREffect",
+  "description": "A Banuba augmented reality effect that can be applied to a face in a video frame.",
+  "type": "object",
+  "properties": {
+    "effectId": {
+      "type": "string",
+      "description": "Unique identifier for the AR effect."
+    },
+    "name": {
+      "type": "string",
+      "description": "Human-readable name of the effect."
+    },
+    "category": {
+      "type": "string",
+      "description": "Category of the effect.",
+      "enum": ["mask", "filter", "beauty", "makeup", "accessory", "background", "avatar"]
+    },
+    "previewUrl": {
+      "type": "string",
+      "format": "uri",
+      "description": "URL of a preview image for the effect."
+    },
+    "effectUrl": {
+      "type": "string",
+      "format": "uri",
+      "description": "URL of the effect bundle file."
+    },
+    "platforms": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": ["iOS", "Android", "Web", "Windows", "macOS", "Unity", "Flutter", "React Native"]
+      },
+      "description": "Platforms supported by this effect."
+    },
+    "tags": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Tags describing the effect."
+    }
+  },
+  "required": ["effectId", "name", "category"]
+}
