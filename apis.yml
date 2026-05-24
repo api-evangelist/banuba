@@ -141,6 +141,8 @@ common:
         description: Face-based liveness detection and verification for security applications.
       - name: Gaming and Entertainment
         description: Face-tracked AR avatars and character animation for games.
+  - type: LLMsTxt
+    url: https://docs.banuba.com/llms.txt
 maintainers:
   - FN: Kin Lane
     email: kin@apievangelist.com
