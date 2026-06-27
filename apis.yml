@@ -103,7 +103,7 @@ common:
     url: rules/banuba-spectral-rules.yml
   - type: Vocabulary
     url: vocabulary/banuba-vocabulary.yaml
-  - type: NaftikoCapability
+  - type: X-NaftikoCapability
     url: capabilities/face-ar.yaml
   - type: JSONLD
     url: json-ld/banuba-context.jsonld
@@ -141,7 +141,7 @@ common:
         description: Face-based liveness detection and verification for security applications.
       - name: Gaming and Entertainment
         description: Face-tracked AR avatars and character animation for games.
-  - type: LLMsTxt
+  - type: LlmsText
     url: https://docs.banuba.com/llms.txt
 maintainers:
   - FN: Kin Lane
