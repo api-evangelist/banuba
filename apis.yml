@@ -79,6 +79,11 @@ apis:
       Banuba Face Liveness SDK provides anti-spoofing technology that verifies a face
       is real and present in real time, used for identity verification and access control.
 common:
+  - type: DomainSecurity
+    url: security/banuba-domain-security.yml
+  - name: Agent Skills
+    url: https://github.com/Banuba/ai-skills
+    type: AgentSkills
   - type: LinkedIn
     url: https://www.linkedin.com/company/banuba
   - type: Website
