@@ -120,8 +120,6 @@ common:
     url: rules/banuba-spectral-rules.yml
   - type: Vocabulary
     url: vocabulary/banuba-vocabulary.yaml
-  - type: X-NaftikoCapability
-    url: capabilities/face-ar.yaml
   - type: JSONLD
     url: json-ld/banuba-context.jsonld
   - name: Features
