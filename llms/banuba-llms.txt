@@ -1,0 +1,518 @@
+# Banuba Face AR SDK Documentation - Version 1.18.5
+
+> Docs provides full information about Banuba Face AR SDK, integration and customization guides.
+
+
+## far-sdk
+
+Discover Banuba Face AR SDK and your possibilities to build AR apps
+
+- [Banuba Face AR SDK](/index.md): Discover Banuba Face AR SDK and your possibilities to build AR apps
+
+### search
+
+- [Search the documentation](/search.md)
+
+### support
+
+- [Contact Support](/support.md)
+
+### api_docs
+
+API documentation iOS (Swift)
+
+- [API Documentation](/api_docs.md): API documentation iOS (Swift)
+
+### effects
+
+
+#### guides
+
+
+##### feature_params
+
+Since v1.6.1, Banuba SDK provides an oportunity to change some feature parameters using scripting engine:
+
+- [How to change feature parameters using scripting api](/effects/guides/feature_params.md): Since v1.6.1, Banuba SDK provides an oportunity to change some feature parameters using scripting engine:
+
+##### hand_ar_hand_gestures
+
+Learn how to utilize hand gesture tracking with Banuba API.
+
+- [How to use the Hand gestures feature](/effects/guides/hand_ar_hand_gestures.md): Learn how to utilize hand gesture tracking with Banuba API.
+
+#### makeup_deprecated
+
+
+##### face_beauty
+
+Banuba provides the Face Beauty API designed to help you integrate augmented reality beauty try-on features into iOS and Android apps
+
+- [Face Beauty API](/effects/makeup_deprecated/face_beauty.md): Banuba provides the Face Beauty API designed to help you integrate augmented reality beauty try-on features into iOS and Android apps
+
+##### makeup
+
+Banuba provides the Virtual Makeup API designed to help developers integrate augmented reality beauty try-on features into their iOS and Android apps
+
+- [Virtual Makeup API](/effects/makeup_deprecated/makeup.md): Banuba provides the Virtual Makeup API designed to help developers integrate augmented reality beauty try-on features into their iOS and Android apps
+
+##### makeup_usage
+
+Learn how to combine the Makeup API and Beauty API features and use them in your application.
+
+- [How to combine the Makeup API and Beauty API features](/effects/makeup_deprecated/makeup_usage.md): Learn how to combine the Makeup API and Beauty API features and use them in your application.
+
+#### overview
+
+You may also create your own effects with
+
+- [Effect structure](/effects/overview.md): You may also create your own effects with
+
+#### prefabs
+
+
+##### face
+
+GLTF
+
+- [On Face Prefabs](/effects/prefabs/face.md): GLTF
+
+##### hands
+
+Nails
+
+- [On Hands prefabs](/effects/prefabs/hands.md): Nails
+
+##### makeup
+
+Basic concepts
+
+- [Makeup Prefabs](/effects/prefabs/makeup.md): Basic concepts
+
+##### overview
+
+Prefab is high level object that represents set of render and SDK features.
+
+- [Prefabs Overview](/effects/prefabs/overview.md): Prefab is high level object that represents set of render and SDK features.
+
+##### sounds
+
+Sounds
+
+- [Sounds Prefabs](/effects/prefabs/sounds.md): Sounds
+
+##### sprites
+
+sprites
+
+- [Sprites Prefabs](/effects/prefabs/sprites.md): sprites
+
+##### top_level
+
+Background
+
+- [Top Level Prefabs](/effects/prefabs/top_level.md): Background
+
+#### virtual_background
+
+Banuba provides the Virtual Background API designed to help developers integrate augmented reality background separation into their apps
+
+- [Virtual Background API](/effects/virtual_background.md): Banuba provides the Virtual Background API designed to help developers integrate augmented reality background separation into their apps
+
+### support_page
+
+- Dev Portal
+
+- [Support](/support_page.md): - Dev Portal
+
+### tutorials
+
+
+#### capabilities
+
+
+##### 3rd_licenses
+
+A list of third party libraries used within Banuba SDK
+
+- [Third parties library list](/tutorials/capabilities/3rd_licenses.md): A list of third party libraries used within Banuba SDK
+
+##### demo_face_filters
+
+List of Demo Face Filters and technologies represented with them.
+
+- [Demo Face Filters](/tutorials/capabilities/demo_face_filters.md): List of Demo Face Filters and technologies represented with them.
+
+##### glossary
+
+AR Technologies
+
+- [FaceAR Glossary](/tutorials/capabilities/glossary.md): AR Technologies
+
+##### sdk_features
+
+A list of Banuba Face AR SDK features and platforms supported
+
+- [SDK Features](/tutorials/capabilities/sdk_features.md): A list of Banuba Face AR SDK features and platforms supported
+
+##### system_requirements
+
+Supported Platforms
+
+- [System Requirements](/tutorials/capabilities/system_requirements.md): Supported Platforms
+
+##### technical_specification
+
+Technical specification and minimal requirements of the Banuba Face AR SDK features.
+
+- [Technical Specification](/tutorials/capabilities/technical_specification.md): Technical specification and minimal requirements of the Banuba Face AR SDK features.
+
+##### token_management
+
+This section will provide the reader with the answers from the user’s frequently asked questions related to the token management process.
+
+- [Token Management](/tutorials/capabilities/token_management.md): This section will provide the reader with the answers from the user’s frequently asked questions related to the token management process.
+
+#### changelog
+
+[1.18.5] - 2026-08-10
+
+- [Changelog](/tutorials/changelog.md): [1.18.5] - 2026-08-10
+
+#### development
+
+
+##### api_overview
+
+API Overview
+
+- [API Overview](/tutorials/development/api_overview.md): API Overview
+
+###### android
+
+image
+
+- [android](/tutorials/development/api_overview/android.md): image
+
+###### desktop
+
+image
+
+- [desktop](/tutorials/development/api_overview/desktop.md): image
+
+###### ios
+
+image
+
+- [ios](/tutorials/development/api_overview/ios.md): image
+
+###### web
+
+image
+
+- [web](/tutorials/development/api_overview/web.md): image
+
+##### basic_integration
+
+Getting Started guide for Banuba SDK
+
+- [Getting Started](/tutorials/development/basic_integration.md): Getting Started guide for Banuba SDK
+
+###### android
+
+Installation
+
+- [android](/tutorials/development/basic_integration/android.md): Installation
+
+###### desktop
+
+The steps below apply to desktop integration (Windows and/or macOS) with C++.
+
+- [desktop](/tutorials/development/basic_integration/desktop.md): The steps below apply to desktop integration (Windows and/or macOS) with C++.
+
+###### flutter
+
+Banuba SDK for
+
+- [flutter](/tutorials/development/basic_integration/flutter.md): Banuba SDK for
+
+###### ios
+
+Installation
+
+- [ios](/tutorials/development/basic_integration/ios.md): Installation
+
+###### react_native
+
+Banuba SDK for
+
+- [react_native](/tutorials/development/basic_integration/react_native.md): Banuba SDK for
+
+###### web
+
+Requirements
+
+- [web](/tutorials/development/basic_integration/web.md): Requirements
+
+##### guides
+
+
+###### ar_cloud
+
+A guide on how to use AR cloud in the SDK
+
+- [AR Cloud Guide](/tutorials/development/guides/ar_cloud.md): A guide on how to use AR cloud in the SDK
+
+###### landmarks
+
+A guide on how to get face landmarks
+
+- [Face Landmarks Guide](/tutorials/development/guides/landmarks.md): A guide on how to get face landmarks
+
+###### migration
+
+To version 1.17.0
+
+- [Migration Guides](/tutorials/development/guides/migration.md): To version 1.17.0
+
+###### optimization
+
+Optimizing WebAR SDK bundle size
+
+- [Optimization Guides](/tutorials/development/guides/optimization.md): Optimizing WebAR SDK bundle size
+
+###### watermark
+
+How to apply a watermark to a video
+
+- [Watermark Guide](/tutorials/development/guides/watermark.md): How to apply a watermark to a video
+
+##### installation
+
+A getting started guide on how to add Banuba SDK to a project
+
+- [Adding Banuba SDK to your project](/tutorials/development/installation.md): A getting started guide on how to add Banuba SDK to a project
+
+###### android
+
+Packages
+
+- [android](/tutorials/development/installation/android.md): Packages
+
+###### desktop
+
+Banuba SDK for desktop platforms (i.e. Windows and MacOS) is distributed via
+
+- [desktop](/tutorials/development/installation/desktop.md): Banuba SDK for desktop platforms (i.e. Windows and MacOS) is distributed via
+
+###### ios
+
+CocoaPods packages
+
+- [ios](/tutorials/development/installation/ios.md): CocoaPods packages
+
+###### web
+
+NPM Package
+
+- [web](/tutorials/development/installation/web.md): NPM Package
+
+##### known_issues
+
+Visit our FAQ or contact our support.
+
+- [Known Issues](/tutorials/development/known_issues.md): Visit our FAQ or contact our support.
+
+###### web
+
+MediaStreamCapture stream freezes when a browser tab becomes inactive in Safari
+
+- [web](/tutorials/development/known_issues/web.md): MediaStreamCapture stream freezes when a browser tab becomes inactive in Safari
+
+##### llms
+
+<GuideHero
+
+- [Build a Face AR App in Minutes with AI](/tutorials/development/llms.md): <GuideHero
+
+##### samples
+
+A getting started guide for Banuba SDK
+
+- [Examples of using Banuba SDK](/tutorials/development/samples.md): A getting started guide for Banuba SDK
+
+###### android
+
+Requirements
+
+- [android](/tutorials/development/samples/android.md): Requirements
+
+###### desktop
+
+Examples bellow are written in C++ and will run both on Windows and macOS.
+
+- [desktop](/tutorials/development/samples/desktop.md): Examples bellow are written in C++ and will run both on Windows and macOS.
+
+###### flutter
+
+Minimal sample
+
+- [flutter](/tutorials/development/samples/flutter.md): Minimal sample
+
+###### ios
+
+iOS samples (Swift)
+
+- [ios](/tutorials/development/samples/ios.md): iOS samples (Swift)
+
+###### macos
+
+macOS sample (Swift)
+
+- [macos](/tutorials/development/samples/macos.md): macOS sample (Swift)
+
+###### react_native
+
+Minimal sample
+
+- [react_native](/tutorials/development/samples/react_native.md): Minimal sample
+
+###### web
+
+Quickstart
+
+- [web](/tutorials/development/samples/web.md): Quickstart
+
+##### videocall
+
+A guide on how to integrate video calling in a project with Banuba SDK
+
+- [Using video calls with the Banuba SDK](/tutorials/development/videocall.md): A guide on how to integrate video calling in a project with Banuba SDK
+
+###### android
+
+<a
+
+- [android](/tutorials/development/videocall/android.md): <a
+
+###### flutter
+
+Due to Flutter limitations, for every videocall solution you have to create a native Flutter plugin. We have developed one for integration with
+
+- [flutter](/tutorials/development/videocall/flutter.md): Due to Flutter limitations, for every videocall solution you have to create a native Flutter plugin. We have developed one for integration with
+
+###### ios
+
+<a
+
+- [ios](/tutorials/development/videocall/ios.md): <a
+
+###### react_native
+
+Due to React Native limitations, for every videocall solution you have to create a React native module. We developed one for integration with
+
+- [react_native](/tutorials/development/videocall/react_native.md): Due to React Native limitations, for every videocall solution you have to create a React native module. We developed one for integration with
+
+###### web
+
+Agora
+
+- [web](/tutorials/development/videocall/web.md): Agora
+
+#### unity
+
+
+##### basic_integration
+
+Discover how to launch Banuba Face AR SDK for Unity
+
+- [Banuba Face AR SDK for Unity](/tutorials/unity/basic_integration.md): Discover how to launch Banuba Face AR SDK for Unity
+
+##### demo_scene
+
+Banuba SDK provides a Demo Scene for our Unity SDK.
+
+- [Unity Demo Scene](/tutorials/unity/demo_scene.md): Banuba SDK provides a Demo Scene for our Unity SDK.
+
+##### overview
+
+Discover how to launch Banuba Face AR SDK for Unity
+
+- [Face AR SDK for Unity Overview](/tutorials/unity/overview.md): Discover how to launch Banuba Face AR SDK for Unity
+
+##### videocall
+
+The example of Banuba SDK and Agora.io SDK integration to enable augmented reality filters in video calls for Unity.
+
+- [Using video calls with the Banuba SDK](/tutorials/unity/videocall.md): The example of Banuba SDK and Agora.io SDK integration to enable augmented reality filters in video calls for Unity.
+
+# Banuba Video and Photo Editor SDKs Documentation - Version 16aac4806a9f8ba2de15d4feaa29c65e
+
+> Docs provides full information about Banuba Video and Photo Editor SDKs, integration and customization guides.
+
+This file contains links to documentation sections following the llmstxt.org standard.
+
+## Table of Contents
+
+- [Overview Video Editor SDK on Android](https://docs.banuba.com/ve-pe-sdk/android/adv-integration-overview.md): Banuba Video Editor SDK has built in UI/UX experience and provides a number of customizations you can use to meet your requirements.
+- [AI Clipping on Android](https://docs.banuba.com/ve-pe-sdk/android/ai_clipping.md): The [AI Clipping](https://www.banuba.com/ai-sdk) feature automates the video creation process by leveraging the power of artificial intelligence. T...
+- [Closed Captions on Android](https://docs.banuba.com/ve-pe-sdk/android/close_captions.md): Closed captions(CC) are a textual representation of the audio within a media file.
+- [Dependencies and Licenses on Android](https://docs.banuba.com/ve-pe-sdk/android/dependencies_licenses_ve.md): Lists used dependencies and licenses in the SDK.
+- [Use of FFmpeg](https://docs.banuba.com/ve-pe-sdk/android/ffmpeg.md): Banuba Video Editor SDK uses FFmpeg version ```5.3.0 ```
+- [Audio content on Android](https://docs.banuba.com/ve-pe-sdk/android/guide_audio_content.md): Guide to integrating and customizing audio providers in Video Editor SDK.
+- [Camera screen on Android](https://docs.banuba.com/ve-pe-sdk/android/guide_camera.md): Guide to modifying camera UI elements and screen configuration.
+- [Cover image on Android](https://docs.banuba.com/ve-pe-sdk/android/guide_cover.md): Cover image screen allows users to pick any frame of video as image or choose an image from gallery.
+- [Drafts screen on Android](https://docs.banuba.com/ve-pe-sdk/android/guide_drafts.md): Guide to integrating and customizing drafts screen on Video Editor SDK.
+- [Editor screen on Android](https://docs.banuba.com/ve-pe-sdk/android/guide_editor.md): Guide to integrating and customizing Editor screen.
+- [NEW Editor screen on Android](https://docs.banuba.com/ve-pe-sdk/android/guide_editor_v2.md): Guide to integrating and customizing New Editor screen.
+- [Export media on Android](https://docs.banuba.com/ve-pe-sdk/android/guide_export.md): Video Editor SDK allows to export a number of media files i.e. video and audio with various resolutions and other configurations. 
+- [Face AR and AR Cloud products on Android](https://docs.banuba.com/ve-pe-sdk/android/guide_far_arcloud.md): [Banuba Face AR SDK](https://www.banuba.com/facear-sdk/face-filters) product is used on camera and editor screens for applying various AR effects w...
+- [Drawing on Android](https://docs.banuba.com/ve-pe-sdk/android/guide_finger_drawing.md): Lets your users draw freely on screen. It is a convenient tool for highlighting important objects in the video or spicing up the frame with funny d...
+- [Gallery screen on Android](https://docs.banuba.com/ve-pe-sdk/android/guide_gallery.md): Video Editor SDK includes built in gallery functionality where the user can pick any video or image and use it while making video.
+- [Green Screen on Android](https://docs.banuba.com/ve-pe-sdk/android/guide_green_screen.md): Video Editor SDK brings you real-time background subtraction technology for you to empower your users with the best quality virtual background serv...
+- [Open Photo Editor SDK from Camera screen on Android](https://docs.banuba.com/ve-pe-sdk/android/guide_open_pe.md): This guide demonstrates how to open [Photo Editor SDK](https://www.banuba.com/photo-editor-sdk) just after taking a photo on Video Editor Camera sc...
+- [Share video screen on Android](https://docs.banuba.com/ve-pe-sdk/android/guide_share_video.md): Share video screen allows users to easily share an exported video using popular social media services and OS specific components.
+- [Stickers on Android](https://docs.banuba.com/ve-pe-sdk/android/guide_stickers.md): Guide to using stickers in Video Editor SDK on Android.
+- [Video recording integration guide on Android](https://docs.banuba.com/ve-pe-sdk/android/guide_video_recording.md): Guide to modifying video recording feature in Video Editor SDK.
+- [Weatherman on Android](https://docs.banuba.com/ve-pe-sdk/android/guide_weatherman.md): Weatherman mode is an improvement on top of Banuba's cutting-edge background replacement. It allows users to drag and drop themselves on any place ...
+- [Install Photo Editor on Android](https://docs.banuba.com/ve-pe-sdk/android/installation-pe.md): Guide to installing Photo Editor SDK on Android.
+- [Install Video Editor on Android](https://docs.banuba.com/ve-pe-sdk/android/installation-ve.md): Guide to installing Video Editor SDK on Android.
+- [Launching Photo Editor on Android](https://docs.banuba.com/ve-pe-sdk/android/launching-pe.md): Guide to launching Photo Editor SDK.
+- [Launching Video Editor on Android](https://docs.banuba.com/ve-pe-sdk/android/launching-ve.md): Guide to launching Video Editor SDK on Android.
+- [LLM and Vibe Coding on Android](https://docs.banuba.com/ve-pe-sdk/android/llm-vibe-coding.md): If you use large language models for programming, feel free to use our LLM-ready documentation.
+- [Banuba Photo Editor SDK Requirements on Android](https://docs.banuba.com/ve-pe-sdk/android/requirements-pe.md): Guide contains general requirements for using Photo Editor SDK on Android.
+- [Android Requirements and Installation Guide](https://docs.banuba.com/ve-pe-sdk/android/requirements-ve.md): Learn about the Android requirements and features for the Banuba Video Editor SDK. See supported versions, compatible devices, & other details.
+- [FAQ on Android](https://docs.banuba.com/ve-pe-sdk/android/ve-faq.md): These are the answers to the most common questions asked about our SDK.
+- [Video Templates on Android](https://docs.banuba.com/ve-pe-sdk/android/video_templates_guide.md): Templates let users create stunning videos quickly and easily using predefined sets of effects, transitions, and music. All it takes to make a shar...
+- [Overview Video Editor SDK on iOS](https://docs.banuba.com/ve-pe-sdk/ios/adv-integration-overview.md): Banuba Video Editor SDK has built in UI/UX experience and provides a number of customizations you can use to meet your requirements.
+- [AI Clipping on iOS](https://docs.banuba.com/ve-pe-sdk/ios/ai_clipping.md): The [AI Clipping](https://www.banuba.com/ai-sdk) feature automates the video creation process by leveraging the power of artificial intelligence. T...
+- [Closed Captions on iOS](https://docs.banuba.com/ve-pe-sdk/ios/close_captions.md): Closed captions(CC) are a textual representation of the audio within a media file.
+- [Installation with CocoaPods](https://docs.banuba.com/ve-pe-sdk/ios/cocapods-installation.md): Learn the [CocoaPods Getting Started Guide](https://guides.cocoapods.org/using/getting-started.html) if you are new to CocoaPods.
+- [Audio content on iOS](https://docs.banuba.com/ve-pe-sdk/ios/guide_audio_content.md): Guide to integrating and customizing audio providers in Video Editor SDK.
+- [Camera screen on iOS](https://docs.banuba.com/ve-pe-sdk/ios/guide_camera.md): Guide to modifying camera UI elements and screen configuration.
+- [Cover image on iOS](https://docs.banuba.com/ve-pe-sdk/ios/guide_cover.md): Cover image screen allows users to pick any frame of video as image or choose an image from gallery.
+- [Drafts screen on iOS](https://docs.banuba.com/ve-pe-sdk/ios/guide_drafts.md): Guide to integrating and customizing drafts screen on Video Editor SDK.
+- [Editor screen on iOS](https://docs.banuba.com/ve-pe-sdk/ios/guide_editor.md): Guide to integrating and customizing Editor screen.
+- [NEW Editor screen on iOS](https://docs.banuba.com/ve-pe-sdk/ios/guide_editor_v2.md): Guide to integrating and customizing New Editor screen.
+- [Export media on iOS](https://docs.banuba.com/ve-pe-sdk/ios/guide_export.md): Video Editor SDK allows to export a number of media files i.e. video and audio with various resolutions and other configurations.
+- [Face AR and AR Cloud products on iOS](https://docs.banuba.com/ve-pe-sdk/ios/guide_far_arcloud.md): [Banuba Face AR SDK](https://www.banuba.com/facear-sdk/face-filters) product is used on camera and editor screens for applying various AR effects w...
+- [Drawing on iOS](https://docs.banuba.com/ve-pe-sdk/ios/guide_finger_drawing.md): Lets your users draw freely on screen. It is a convenient tool for highlighting important objects in the video or spicing up the frame with funny d...
+- [Gallery screen on iOS](https://docs.banuba.com/ve-pe-sdk/ios/guide_gallery.md): Video Editor SDK includes built in gallery functionality where the user can pick any video or image and use it while making video.
+- [Green Screen on iOS](https://docs.banuba.com/ve-pe-sdk/ios/guide_green_screen.md): Video Editor SDK brings you real-time background subtraction technology for you to empower your users with the best quality virtual background serv...
+- [Open Photo Editor SDK from Camera screen on iOS](https://docs.banuba.com/ve-pe-sdk/ios/guide_open_pe.md): This guide demonstrates how to open [Photo Editor SDK](https://www.banuba.com/photo-editor-sdk) just after taking a photo on Video Editor Camera sc...
+- [Share video screen on iOS](https://docs.banuba.com/ve-pe-sdk/ios/guide_share_video.md): Share video screen allows users to easily share an exported video using popular social media services and OS specific components.
+- [Stickers on iOS](https://docs.banuba.com/ve-pe-sdk/ios/guide_stickers.md): Guide to using stickers in Video Editor SDK on Android.
+- [Video recording integration guide on iOS](https://docs.banuba.com/ve-pe-sdk/ios/guide_video_recording.md): Guide to modifying video recording feature in Video Editor SDK.
+- [Weatherman on iOS](https://docs.banuba.com/ve-pe-sdk/ios/guide_weatherman.md): Weatherman mode is an improvement on top of Banuba's cutting-edge background replacement. It allows users to drag and drop themselves on any place ...
+- [Launching Photo Editor on iOS](https://docs.banuba.com/ve-pe-sdk/ios/launching-pe.md): Guide to launching Photo Editor SDK.
+- [Launching from SwiftUI](https://docs.banuba.com/ve-pe-sdk/ios/launching-ve-swiftui.md): Guide to launch Video Editor from SiftUI.
+- [Launching from UIKit](https://docs.banuba.com/ve-pe-sdk/ios/launching-ve-uikit.md): Guide to launch Video Editor from UIKit.
+- [LLM and Vibe Coding on iOS](https://docs.banuba.com/ve-pe-sdk/ios/llm-vibe-coding.md): If you use large language models for programming, feel free to use our LLM-ready documentation.
+- [Installation with CocoaPods](https://docs.banuba.com/ve-pe-sdk/ios/pe-cocapods-installation.md): Learn the [CocoaPods Getting Started Guide](https://guides.cocoapods.org/using/getting-started.html) if you are new to CocoaPods.
+- [Configure Photo Editor on iOS](https://docs.banuba.com/ve-pe-sdk/ios/pe-configuration.md): Guide to modifying Photo Editor SDK.
+- [Banuba Photo Editor SDK Requirements on iOS](https://docs.banuba.com/ve-pe-sdk/ios/pe-requirements.md): Guide contains general requirements for using Photo Editor SDK on iOS.
+- [Installation with Swift Package Manager on iOS](https://docs.banuba.com/ve-pe-sdk/ios/pe-spm-installation.md): Learn the [SPM Getting Started Guide](https://developer.apple.com/documentation/swift_packages/adding_package_dependencies_to_your_app) if you are ...
+- [iOS Requirements and Installation Guide](https://docs.banuba.com/ve-pe-sdk/ios/requirements.md): Learn about the iOS requirements and features for the Banuba Video Editor SDK. See supported versions, compatible devices, & other details.
+- [Installation with Swift Package Manager](https://docs.banuba.com/ve-pe-sdk/ios/spm-installation.md): Learn the [SPM Getting Started Guide](https://developer.apple.com/documentation/swift_packages/adding_package_dependencies_to_your_app) if you are ...
+- [FAQ on iOS](https://docs.banuba.com/ve-pe-sdk/ios/ve-faq.md): These are the answers to the most common questions asked about our SDK.
+- [Video Templates on iOS](https://docs.banuba.com/ve-pe-sdk/ios/video_templates_guide.md): Templates let users create stunning videos quickly and easily using predefined sets of effects, transitions, and music. All it takes to make a shar...
