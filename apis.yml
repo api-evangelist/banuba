@@ -61,6 +61,11 @@ apis:
     name: Banuba Video Editor SDK
     tags:
       - Video Editing
+      - Artificial Intelligence
+      - White Label
+      - SDK
+    tags_raw:
+      - Video Editing
       - AI
       - White-Label
       - SDK
