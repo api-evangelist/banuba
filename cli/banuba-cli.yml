@@ -1,0 +1,47 @@
+generated: '2026-09-17'
+method: searched
+source: https://github.com/Banuba/arcloud-effects-cli (README, read 2026-09-17; Go; last pushed 2024-09-02)
+name: Banuba AR Cloud CLI for effects
+official: true
+scope: >-
+  A single-purpose first-party tool for the AR Cloud product: it unpacks the effects .zip Banuba delivers to a
+  licensed customer, writes one <effect>.zip + <effect>.png per AR effect, and emits the JSON manifest the AR
+  Cloud SDK fetches at runtime. It is a packaging tool for a customer-hosted CDN, not a client for a Banuba API.
+install:
+  - method: github-binary
+    platform: macos
+    command: ./bin/mac_arcloud-effects-cli -s <path/to/effects.zip> -u <your_arcloud_domain>
+  - method: github-binary
+    platform: windows
+    command: .\bin\win_arcloud-effects-cli.exe -s <path\to\effects.zip> -u <your_arcloud_domain>
+  - method: source
+    command: 'go build (module in the repo; binaries are checked into bin/)'
+commands:
+  - group: process
+    command: arcloud-effects-cli
+    flags:
+      - flag: -s, --source
+        required: true
+        description: Path to the effects zip file supplied by Banuba.
+      - flag: -d, --destination
+        required: false
+        default: effects
+        description: Destination folder to extract the effects into.
+      - flag: -u, --api-url
+        required: true
+        description: The AR Cloud domain (the CDN base URL the manifest URLs are written against).
+    output:
+      - effects/<effect_name>.zip and effects/<effect_name>.png per effect
+      - effects/api_response — the JSON manifest {effects:[{URL, Preview, ETag}]} (ETag is the MD5 of the effect)
+flows:
+  - name: Publish an AR Cloud effect catalogue to your own CDN
+    steps:
+      - Run the CLI against the effects.zip Banuba provided, passing the CDN domain as --api-url.
+      - Upload the api_response manifest (Content-Type application/json, no file extension) to https://<your_arcloud_domain>/v1/effects/api_response.
+      - Upload every .zip and .png to the domain root.
+      - Point banubaArCloudURL in the app at the domain; the AR Cloud SDK (iOS/Android/Flutter) lists effects with getAREffects and downloads on demand.
+runtime_contract:
+  note: >-
+    The manifest layout (GET <arcloud_domain>/v1/effects/api_response returning {effects:[{URL,Preview,ETag}]})
+    is the only HTTP contract Banuba documents publicly. It is served by the CUSTOMER's CDN, so it is not a
+    Banuba-hosted API and no baseURL is recorded for it.

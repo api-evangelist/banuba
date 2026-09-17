@@ -1,0 +1,55 @@
+generated: '2026-09-17'
+method: searched
+source: >-
+  https://tintvto.com/ (demo page + widget.js, read 2026-09-17), https://www.banuba.com/tint-makeup-virtual-try-on,
+  https://www.banuba.com/blog/banuba-tint-virtual-try-on-pricing-guide, https://apps.shopify.com/tint-virtual-try-on-by-banuba,
+  https://www.banuba.com/webar-sdk, https://docs.banuba.com/far-sdk/tutorials/development/installation
+note: >-
+  Distinct from the SDK packages in packages/: these are hosted or embeddable UI surfaces a merchant or site drops
+  in without building against the engine. The tint-vto element is loaded from Banuba's CDN and talks to
+  api.tintvto.com (the Tint public API, undocumented) with a merchant id / publishable key; the Face AR WebAR
+  Player is an npm-delivered player rather than a hosted embed.
+families:
+  - family: Banuba TINT virtual try-on
+    components:
+      - name: tint-vto
+        kind: web-component
+        loader: https://tintvto.com/widget.js (ES module; defines the <tint-vto> custom element, which mounts an iframe and fetches assets/app.js)
+        configuration:
+          - merchantId
+          - publishableKey (or publishable-key)
+          - token
+          - q (short code)
+          - productId / variantId
+          - shopifyStoreId / shopifyHost
+          - publicApiUrl (override for the Tint public API base)
+          - lang, features, featureFlags, lighting-coefficient, device-pixel-ratio, fps
+        description: Embeddable virtual try-on widget (makeup, eyewear, contact lenses, hair colour) that opens the AR camera try-on for a product.
+        demo: https://demo.tintvto.com/
+      - name: Easy Virtual Try-On (hosted)
+        kind: hosted-page
+        url: https://app.tintvto.com/
+        description: No-code hosted try-on — a merchant digitizes products in the admin at app.tintvto.com and shares a try-on URL / QR code; works on any storefront. Accounts via accounts.tintvto.com (Clerk).
+      - name: TINT Virtual Try-On by Banuba (Shopify app)
+        kind: platform-app
+        url: https://apps.shopify.com/tint-virtual-try-on-by-banuba
+        description: Shopify-native embed that places the try-on inside the product page and is configured from the Shopify admin. Launched April 2025.
+      - name: 3D viewer
+        kind: hosted-page
+        url: https://dev.tintvto.com/3d-viewer
+        description: Referenced from the Tint admin bundle; 3D product viewer for the 3D virtual store offering.
+  - family: Face AR SDK (Web)
+    components:
+      - name: WebAR Player
+        kind: player-library
+        loader: npm i @banuba/webar (Player, Module, Webcam, Dom classes; BanubaSDK.data / .wasm / .simd.wasm served from the app root)
+        description: Browser player for Face AR effects; not a hosted embed — the site bundles it and supplies its own client token.
+        docs: https://docs.banuba.com/far-sdk/tutorials/development/installation
+      - name: Banuba Studio
+        kind: hosted-tool
+        url: https://studio.banuba.com/
+        description: Browser-based effect builder for creating AR effects that the SDK / AR Cloud then loads.
+      - name: Asset Store
+        kind: hosted-catalog
+        url: https://assetstore.banuba.net/
+        description: Catalogue of 1000+ premade AR filters and effects for licensed customers.

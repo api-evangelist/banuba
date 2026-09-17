@@ -1,0 +1,55 @@
+generated: '2026-09-17'
+method: searched
+source: >-
+  https://docs.banuba.com/far-sdk/tutorials/capabilities/token_management (demo vs commercial token),
+  https://www.banuba.com/webar-sdk#webar-player (in-browser WebAR demo), https://demo.tintvto.com/ (TINT try-on demo),
+  https://huggingface.co/spaces/Banuba-Development/ai-talking-avatar-api-demo (AI Talking Photo demo),
+  https://www.banuba.com/blog/banuba-tint-virtual-try-on-pricing-guide (TINT 14-day trial) — probed 2026-09-17, all 200.
+surface: sdk
+note: >-
+  Banuba has no separate sandbox environment or test-mode credentials: the same SDK binaries run in trial and in
+  production, and the mode is decided by which client token is loaded. What it publishes instead is a demo-token
+  mode plus hosted, no-signup demos of each product. No test values are invented here — there are none to publish.
+modes:
+  - mode: demo
+    credential: demo client token (.txt), requested via the website form or a sales manager
+    validity: 14 days (standard trial); renewable on request if evaluation was not finished
+    scope: activates ALL SDK features for evaluation
+    after_expiry: one month with Banuba watermark + screen blur, then the SDK stops working
+    rule: never ship a demo token in a live app
+  - mode: commercial
+    credential: commercial client token issued by the account manager after payment
+    validity: the prepaid licence period; auto-renews while in use
+    scope: the feature set / platforms defined by the licence
+key_prefixes: null
+test_values: null
+test_clocks: null
+hosted_demos:
+  - name: WebAR player demo
+    url: https://www.banuba.com/webar-sdk#webar-player
+    product: Face AR SDK (Web)
+    description: Run Face AR effects (beauty touch-up, masks, backgrounds) in the browser from the marketing page; no signup.
+  - name: Banuba Technologies demo app (iOS)
+    url: https://apps.apple.com/us/app/banuba-technologies/id1435804709
+    product: Face AR SDK
+  - name: Banuba Technologies demo app (Android)
+    url: https://play.google.com/store/apps/details?id=com.banuba.tech.demo
+    product: Face AR SDK
+  - name: Banuba Video Editor demo app (iOS)
+    url: https://apps.apple.com/by/app/banuba-video-editor/id1577338331
+    product: Video Editor SDK
+  - name: TINT virtual try-on demo store
+    url: https://demo.tintvto.com/
+    product: TINT
+    description: Live makeup / eyewear try-on on a demo merchant (merchantId c153075e-... is the public demo merchant baked into tintvto.com).
+  - name: AI Talking Photo demo (Hugging Face Space)
+    url: https://huggingface.co/spaces/Banuba-Development/ai-talking-avatar-api-demo
+    product: AI Talking Photo API
+    description: Upload a photo + audio and generate a talking-photo video; the only public way to exercise the API, whose docs are on request.
+trials:
+  - product: Face AR / Video Editor / Photo Editor SDK
+    trial: 14-day demo token, all features
+    request: https://www.banuba.com/facear-sdk/face-filters#form
+  - product: TINT Easy Virtual Try-On and TINT Shopify app
+    trial: 14-day free trial on every self-serve plan
+    signup: https://app.tintvto.com/

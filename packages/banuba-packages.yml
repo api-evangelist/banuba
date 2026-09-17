@@ -1,0 +1,197 @@
+generated: '2026-09-17'
+method: searched
+source: >-
+  npm registry (registry.npmjs.org/<pkg>), pub.dev (pub.dev/api/packages/<pkg>), Banuba's own Maven Nexus
+  (nexus.banuba.net/service/rest/v1/search?repository=maven-releases), the sdk-banuba GitHub org (SPM packages +
+  CocoaPods specs repo), and https://docs.banuba.com/far-sdk/tutorials/development/installation — read 2026-09-17.
+note: >-
+  Banuba ships native SDKs, not a REST client. Every package below wraps an on-device engine (Face AR / WebAR,
+  Video Editor, Photo Editor, AR Cloud) and needs a Banuba client token. Maven Central, NuGet, PyPI, RubyGems,
+  crates.io and CocoaPods trunk hold nothing from Banuba: Android artifacts live on Banuba's own Nexus
+  (nexus.banuba.net, maven-releases), iOS artifacts are Swift packages under github.com/sdk-banuba plus a private
+  CocoaPods specs repo (github.com/sdk-banuba/banuba-sdk-podspecs). Third-party wrappers on npm/pub.dev
+  (banuba-expo, expo-banuba, flutter_banuba_ar, flutter_banuba_agora_ar, react-native-agora-with-banuba) are
+  listed as official:false.
+packages:
+  - language: javascript
+    registry: npm
+    name: "@banuba/webar"
+    url: https://www.npmjs.com/package/@banuba/webar
+    install: npm i @banuba/webar
+    official: true
+    version: 1.18.5
+    published: '2026-08-07'
+    product: Face AR SDK (Web)
+    note: WebAR SDK — executables (.js, .wasm, .simd.wasm) plus resource modules (modules/*.zip); publisher sdk-banuba.
+  - language: javascript
+    registry: npm
+    name: "@banuba/agora-extension"
+    url: https://www.npmjs.com/package/@banuba/agora-extension
+    install: npm i @banuba/agora-extension
+    official: true
+    version: 2.0.1
+    published: '2026-09-03'
+    product: Face AR SDK (Web, Agora RTC extension)
+  - language: typescript
+    registry: npm
+    name: "@banuba/react-native"
+    url: https://www.npmjs.com/package/@banuba/react-native
+    install: npm i @banuba/react-native
+    official: true
+    version: 2.0.2
+    published: '2026-09-03'
+    product: Face AR SDK (React Native)
+    repository: https://github.com/Banuba/banuba-sdk-react-native
+  - language: typescript
+    registry: npm
+    name: video-editor-react-native
+    url: https://www.npmjs.com/package/video-editor-react-native
+    install: npm i video-editor-react-native
+    official: true
+    version: 0.55.0
+    published: '2026-09-12'
+    product: Video Editor SDK (React Native)
+    repository: https://github.com/Banuba/ve-sdk-react-native
+  - language: typescript
+    registry: npm
+    name: pe-sdk-react-native
+    url: https://www.npmjs.com/package/pe-sdk-react-native
+    install: npm i pe-sdk-react-native
+    official: true
+    version: 0.9.0
+    published: '2026-09-16'
+    product: Photo Editor SDK (React Native)
+    repository: https://github.com/Banuba/pe-sdk-react-native
+  - language: dart
+    registry: pub.dev
+    name: banuba_sdk
+    url: https://pub.dev/packages/banuba_sdk
+    install: flutter pub add banuba_sdk
+    official: true
+    version: 3.1.6
+    published: '2026-09-02'
+    product: Face AR SDK (Flutter)
+    repository: https://github.com/Banuba/banuba-sdk-flutter
+  - language: dart
+    registry: pub.dev
+    name: ve_sdk_flutter
+    url: https://pub.dev/packages/ve_sdk_flutter
+    install: flutter pub add ve_sdk_flutter
+    official: true
+    version: 0.48.0
+    published: '2026-09-10'
+    product: Video Editor SDK (Flutter)
+    repository: https://github.com/Banuba/ve-sdk-flutter
+  - language: dart
+    registry: pub.dev
+    name: pe_sdk_flutter
+    url: https://pub.dev/packages/pe_sdk_flutter
+    install: flutter pub add pe_sdk_flutter
+    official: true
+    version: 0.9.0
+    published: '2026-09-10'
+    product: Photo Editor SDK (Flutter)
+    repository: https://github.com/Banuba/pe-sdk-flutter
+  - language: dart
+    registry: pub.dev
+    name: banuba_arcloud
+    url: https://pub.dev/packages/banuba_arcloud
+    install: flutter pub add banuba_arcloud
+    official: true
+    version: 1.0.6
+    published: '2026-09-10'
+    product: AR Cloud (Flutter)
+    repository: https://github.com/Banuba/arcloud-flutter
+  - language: kotlin
+    registry: maven
+    name: com.banuba.sdk:sdk_api
+    url: https://nexus.banuba.net/#browse/browse:maven-releases
+    install: 'implementation("com.banuba.sdk:sdk_api:1.18.5")  # repo: https://nexus.banuba.net/repository/maven-releases'
+    official: true
+    version: 1.18.5
+    published: '2026-08-07'
+    product: Face AR SDK (Android)
+    note: >-
+      Banuba's own Nexus, not Maven Central. Sibling artifacts in the same group (sdk_core, effect_player,
+      scripting, face_tracker, face_attributes, face_match, makeup, lips, hair, hands, eyes, ...) share the version;
+      the docs require every package to be on the same version.
+  - language: kotlin
+    registry: maven
+    name: com.banuba.sdk:ve-sdk
+    url: https://nexus.banuba.net/#browse/browse:maven-releases
+    install: 'implementation("com.banuba.sdk:ve-sdk:1.54.1")  # repo: https://nexus.banuba.net/repository/maven-releases'
+    official: true
+    version: 1.54.1
+    published: '2026-08-28'
+    product: Video Editor SDK (Android)
+    note: Siblings on the same Nexus — ve-ui-sdk, ve-effects-sdk, ve-export-sdk, ve-playback-sdk, ve-gallery-sdk, ve-audio-browser-sdk, ve-flow-sdk, camera-sdk, camera-ui-sdk, core-sdk, core-ui-sdk, ar-cloud, ffmpeg.
+  - language: swift
+    registry: spm
+    name: BNBSdkApi
+    url: https://github.com/sdk-banuba/BNBSdkApi
+    install: 'Xcode > File > Add Package Dependencies... > https://github.com/sdk-banuba/BNBSdkApi'
+    official: true
+    version: 1.18.5
+    published: '2026-08-07'
+    product: Face AR SDK (iOS, Swift Package Manager)
+    note: >-
+      One Swift package per feature under github.com/sdk-banuba (BNBSdkCore, BNBEffectPlayer, BNBFaceTracker,
+      BNBMakeup, BNBHair, BNBLips, BNBBackground, BNBResources, BanubaSdk umbrella, ...); all tagged 1.18.5 on
+      2026-08-07. Version read from the repo's releases/latest.
+  - language: objective-c
+    registry: cocoapods
+    name: BanubaSdk
+    url: https://github.com/sdk-banuba/banuba-sdk-podspecs
+    install: "source 'https://github.com/sdk-banuba/banuba-sdk-podspecs.git'  # then pod 'BanubaSdk' + pod install --repo-update"
+    official: true
+    version: null
+    published: null
+    product: Face AR SDK (iOS, CocoaPods)
+    note: Not on CocoaPods trunk (trunk.cocoapods.org/api/v1/pods/BanubaSdk -> 404); served from Banuba's own specs repo, which has no unauthenticated metadata endpoint. Specs repo last pushed 2026-08-07, matching the 1.18.5 SPM release.
+  - language: c#
+    registry: unity
+    name: Banuba Face AR SDK for Unity
+    url: https://github.com/Banuba/quickstart-unity
+    install: 'Unity package delivered with the client token; see the quickstart-unity sample'
+    official: true
+    version: null
+    published: null
+    product: Face AR SDK (Unity)
+    note: No public registry; distributed with the licence. quickstart-unity last pushed 2026-06-04.
+  - language: c++
+    registry: github-releases
+    name: FaceAR-SDK-desktop-releases
+    url: https://github.com/Banuba/FaceAR-SDK-desktop-releases
+    install: 'Download from the GitHub releases page'
+    official: true
+    version: null
+    published: null
+    product: Face AR SDK (Windows / desktop C++)
+    note: Windows builds are published as GitHub releases; the repo was last pushed 2026-08-07. Version not read (release assets are behind the licence agreement).
+  - language: javascript
+    registry: npm
+    name: banuba-expo
+    url: https://www.npmjs.com/package/banuba-expo
+    install: npm i banuba-expo
+    official: false
+    version: 0.0.40
+    published: '2025-07-29'
+    note: Community Expo wrapper (publisher connyct), not Banuba.
+  - language: javascript
+    registry: npm
+    name: expo-banuba
+    url: https://www.npmjs.com/package/expo-banuba
+    install: npm i expo-banuba
+    official: false
+    version: 0.6.1
+    published: '2024-05-06'
+    note: Community Expo wrapper (publisher esbrito), not Banuba.
+  - language: dart
+    registry: pub.dev
+    name: flutter_banuba_ar
+    url: https://pub.dev/packages/flutter_banuba_ar
+    install: flutter pub add flutter_banuba_ar
+    official: false
+    version: 0.1.2
+    published: '2026-06-01'
+    note: Community plugin (github.com/daniel-py), not Banuba.

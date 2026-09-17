@@ -1,0 +1,44 @@
+generated: '2026-09-17'
+method: searched
+source: >-
+  https://docs.banuba.com/far-sdk/tutorials/capabilities/token_management (token lifecycle),
+  https://docs.banuba.com/far-sdk/tutorials/changelog (release cadence), https://docs.banuba.com/far-sdk/tutorials/development/installation
+  (same-version rule), https://www.banuba.com/banuba-pricing-face-ar-sdk (licence renewal FAQ),
+  https://status.banuba.com (probed 2026-09-17: no DNS answer) — read 2026-09-17.
+surface: sdk
+versioning:
+  scheme: semver
+  current: 1.18.5
+  current_date: '2026-08-10'
+  cadence: >-
+    Face AR SDK ships a patch roughly monthly and a minor every few months (1.17.0 2025-03-20 -> 1.18.0 2026-03-09 ->
+    1.18.5 2026-08-10, 60+ dated entries). Video Editor SDK is versioned separately (1.54.1 on 2026-08-28).
+  compatibility_rule: >-
+    All Banuba SDK packages in an app must be on the same version — "packages with different versions (even minor)
+    may conflict or work incorrectly with each other" (installation guide). Web licences are domain-bound, mobile
+    licences are application-bound (pricing guide).
+deprecation_policy:
+  published: false
+  note: >-
+    No deprecation or end-of-support policy is published. The changelog has no Deprecated/Removed sections and no
+    Sunset/Deprecation headers apply because there is no HTTP surface. Breaking changes are handled with per-release
+    migration guides (the Video Editor SDK 1.50.0 migration guide lives on vebanuba.notion.site).
+licence_token_lifecycle:
+  demo_token: valid 14 days (standard trial); may be renewed on request if evaluation was not completed
+  commercial_token: valid for the prepaid licence period; renewed by the account manager after pre-payment; licence auto-renews while in use
+  grace_period: >-
+    For one month after expiry the SDK keeps working but overlays the Banuba watermark and screen blur; after that
+    month the SDK stops working entirely while the host app keeps running. An expired token cannot be extended — a new
+    one is issued.
+  recommendation: store the token server-side so renewal does not require an App Store / Play Market release
+status_page:
+  published: false
+  probed: https://status.banuba.com
+  status: no DNS answer (curl exit, HTTP 000)
+  note: No status page is published; the SDKs run on-device so there is no hosted runtime to report on (except the TINT try-on platform, which publishes none either).
+sla:
+  published: false
+  note: No SLA page; the pricing FAQ promises a dedicated customer success manager per customer, not a numeric uptime commitment.
+pointers:
+  status_page: false
+  deprecation: false

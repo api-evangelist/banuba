@@ -11,32 +11,38 @@ tags:
   - Video
 kind: contract
 deliveryModel:
-  model: unknown
+  model: library
   open_source: false
-  commercial: false
+  commercial: true
   callable_host: false
-  label: Delivery model not determined — needs a product licence on record
-  confidence: low
+  label: Commercially licensed on-device SDKs (client token), no callable API host
+  confidence: high
   source:
-  - none
-  generated: '2026-08-28'
-  method: derived
+  - https://www.banuba.com/licensing-terms
+  - https://www.banuba.com/terms-and-conditions-sdk
+  - https://docs.banuba.com/far-sdk/tutorials/capabilities/token_management
+  - packages/banuba-packages.yml
+  generated: '2026-09-17'
+  method: searched
 accessModel:
-  pricing: freemium
-  onboarding: unknown
-  trial: false
-  try_now: false
+  pricing: contact-sales
+  onboarding: sales
+  trial: true
+  try_now: true
   public: false
-  label: Freemium
-  confidence: medium
+  label: Sales-quoted MAU-based SDK licences with a 14-day demo token; TINT try-on plans are self-serve ($49-$1,599/mo)
+  confidence: high
   source:
-  - plans
-  generated: '2026-07-22'
-  method: derived
+  - https://www.banuba.com/blog/banuba-face-ar-sdk-pricing-guide
+  - https://docs.banuba.com/far-sdk/tutorials/capabilities/token_management
+  - plans/banuba-plans-pricing.yml
+  - sandbox/banuba-sandbox.yml
+  generated: '2026-09-17'
+  method: searched
 image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/banuba.png
 access: 3rd-Party
 created: '2024-12-16'
-modified: '2026-04-21'
+modified: '2026-09-17'
 position: Consuming
 description: >-
   Banuba is an AR and AI technology company providing the Face AR SDK for augmented reality
@@ -58,6 +64,12 @@ apis:
     properties:
       - url: https://docs.banuba.com/far-sdk/
         type: Documentation
+      - url: https://docs.banuba.com/far-sdk/api_docs/
+        type: APIReference
+      - url: https://docs.banuba.com/far-sdk/tutorials/development/basic_integration/
+        type: GettingStarted
+      - url: https://docs.banuba.com/far-sdk/tutorials/changelog/
+        type: ChangeLog
       - url: https://www.banuba.com/augmented-reality-sdk
         type: Website
       - url: https://github.com/Banuba
@@ -82,8 +94,12 @@ apis:
       - SDK
     humanURL: https://www.banuba.com/video-editor-sdk
     properties:
-      - url: https://docs.banuba.com/ve-sdk/
+      - url: https://docs.banuba.com/ve-pe-sdk/docs/ios/requirements/
         type: Documentation
+      - url: https://docs.banuba.com/ve-pe-sdk/docs/vibe-coding/
+        type: GettingStarted
+      - url: llms/banuba-ve-pe-sdk-llms.txt
+        type: LLMsTxt
       - url: https://www.banuba.com/video-editor-sdk
         type: Website
     description: >-
@@ -97,15 +113,38 @@ apis:
       - Biometrics
       - Security
       - Identity Verification
-    humanURL: https://www.banuba.com/face-liveness
+    humanURL: https://www.banuba.com/face-liveness-sdk
     properties:
-      - url: https://docs.banuba.com/face-liveness/
+      - url: https://docs.banuba.com/far-sdk/tutorials/capabilities/sdk_features/
         type: Documentation
-      - url: https://www.banuba.com/face-liveness
+      - url: https://www.banuba.com/face-liveness-sdk
         type: Website
     description: >-
       Banuba Face Liveness SDK provides anti-spoofing technology that verifies a face
       is real and present in real time, used for identity verification and access control.
+  - aid: banuba:ai-talking-photo-api
+    name: Banuba AI Talking Photo API
+    tags:
+      - Generative AI
+      - Image To Video
+      - Lip Sync
+      - Avatars
+      - Video Generation
+    humanURL: https://www.banuba.com/ai-talking-photo-api
+    properties:
+      - url: https://www.banuba.com/ai-talking-photo-api
+        type: Website
+      - url: https://huggingface.co/spaces/Banuba-Development/ai-talking-avatar-api-demo
+        type: Playground
+      - url: https://github.com/Banuba/BanubaGenAIVideos-iOS
+        type: SDK
+        name: AI Talking Photo SDK — iOS sample
+    description: >-
+      Banuba's one hosted developer API: turns a single portrait image plus an audio track or script
+      into a talking-photo video with lip-sync, facial expressions and full-body motion, rendered as an
+      MP4 for apps and platforms. It is exercised publicly through a Hugging Face Space and an iOS sample
+      SDK, but the HTTP reference is available only on request through Banuba Support (per the sample's
+      README), so no base URL, contract or authentication scheme is recorded here.
 common:
   - type: DomainSecurity
     url: security/banuba-domain-security.yml
@@ -174,7 +213,74 @@ common:
         description: Face-tracked AR avatars and character animation for games.
   - type: LlmsText
     url: https://docs.banuba.com/llms.txt
+  - type: Packages
+    url: packages/banuba-packages.yml
+  - type: SDKs
+    url: packages/banuba-packages.yml
+    name: Banuba SDK packages (npm, pub.dev, Maven Nexus, SPM, CocoaPods)
+  - type: CLI
+    url: cli/banuba-cli.yml
+  - type: Components
+    url: components/banuba-components.yml
+  - type: ChangeLog
+    url: changelog/banuba-changelog.yml
+  - type: Lifecycle
+    url: lifecycle/banuba-lifecycle.yml
+  - type: Authentication
+    url: authentication/banuba-authentication.yml
+  - type: Conventions
+    url: conventions/banuba-conventions.yml
+  - type: Plans
+    url: plans/banuba-plans-pricing.yml
+  - type: RateLimits
+    url: rate-limits/banuba-rate-limits.yml
+  - type: Sandbox
+    url: sandbox/banuba-sandbox.yml
+    name: Demo token mode and hosted demos
+  - type: AgentSkill
+    url: skills/_index.yml
+    name: Banuba Agent Skills (provider-published, github.com/Banuba/ai-skills)
+  - type: LLMsTxt
+    url: llms/banuba-llms.txt
+    name: docs.banuba.com/llms.txt (verbatim)
+  - type: LLMsTxt
+    url: llms/banuba-www-llms.txt
+    name: www.banuba.com/llms.txt (verbatim)
+  - type: GitHubOrganization
+    url: https://github.com/Banuba
+  - type: DeveloperPortal
+    url: https://community.banuba.com/
+    name: Banuba Developer Portal (community)
+  - type: Support
+    url: https://www.banuba.com/support
+  - type: Community
+    url: https://community.banuba.com/
+  - type: Pricing
+    url: https://www.banuba.com/banuba-pricing-face-ar-sdk
+  - type: TermsOfService
+    url: https://www.banuba.com/terms
+  - type: SignUp
+    url: https://www.banuba.com/facear-sdk/face-filters#form
+    name: Free trial request (14-day demo token)
+  - type: APIReference
+    url: https://docs.banuba.com/far-sdk/api_docs/
+  - type: GettingStarted
+    url: https://docs.banuba.com/far-sdk/tutorials/development/basic_integration/
+  - type: ChangeLog
+    url: https://docs.banuba.com/far-sdk/tutorials/changelog/
+    name: Face AR SDK changelog
+  - type: X
+    url: https://x.com/banubafacear
+  - type: YouTube
+    url: https://www.youtube.com/channel/UCl6SgG453jxEjKxFXGmB4Lg
+  - type: Contact
+    url: https://www.banuba.com/contact
 maintainers:
   - FN: Kin Lane
     email: kin@apievangelist.com
 specificationVersion: '0.23'
+x-enrichment:
+  date: '2026-09-17'
+  status: enriched
+  artifacts_added: 14
+  pass: local-v3

@@ -1,0 +1,146 @@
+generated: '2026-09-17'
+method: searched
+source: https://docs.banuba.com/far-sdk/tutorials/changelog (Markdown twin at /far-sdk/tutorials/changelog.md),
+  read 2026-09-17
+product: Banuba Face AR SDK
+scheme: semver (MAJOR.MINOR.PATCH), Keep-a-Changelog sections Added / Changed / Fixed, one dated entry per release
+current_version: 1.18.5
+current_version_date: '2026-08-10'
+note: Only the Face AR SDK publishes a dated changelog. Video Editor / Photo Editor SDK releases are announced on
+  the blog (e.g. "Video Editor SDK v1.39.0 ...") and visible as Maven/pub.dev/npm versions (ve-sdk 1.54.1 on 2026-08-28,
+  ve_sdk_flutter 0.48.0 on 2026-09-10), with a migration guide for 1.50.0 hosted on Notion (vebanuba.notion.site).
+  The Face AR log marks no entry as breaking and has no Deprecated/Removed section in the window recorded here;
+  entries[] holds the most recent 12 of the 60+ releases on the page.
+window: 2025-05-23 .. 2026-08-10
+entries:
+- version: 1.18.5
+  date: '2026-08-10'
+  breaking: false
+  additions: []
+  changes:
+  - General improvements and performance enhancements
+  fixes: []
+- version: 1.18.4
+  date: '2026-07-17'
+  breaking: false
+  additions:
+  - Acne severity detection algorithm
+  changes:
+  - Improved eyeshadow colors rendering
+  - Improved makeup highlighter products application
+  fixes: []
+- version: 1.18.3
+  date: '2026-07-02'
+  breaking: false
+  additions:
+  - Facial skin smoothing algorithm
+  changes:
+  - Improved lipstick colors rendering
+  fixes:
+  - Other improvements and performance enhancements
+- version: 1.18.2
+  date: '2026-06-03'
+  breaking: false
+  additions:
+  - Acne detection algorithm
+  changes: []
+  fixes:
+  - Other improvements and performance enhancements
+- version: 1.18.1
+  date: '2026-04-30'
+  breaking: false
+  additions: []
+  changes:
+  - Improved makeup effects performance
+  fixes:
+  - Other improvements and performance enhancements
+- version: 1.18.0
+  date: '2026-03-09'
+  breaking: false
+  additions: []
+  changes:
+  - Upgraded face tracking algorithm
+  - Improved glasses lens segmentation
+  - Improved glasses frame color detection
+  - Improved skin tone detection
+  - Improved 3d objects positioning on the face
+  fixes:
+  - Other improvements and performance enhancements
+- version: 1.17.7
+  date: '2025-12-19'
+  breaking: false
+  additions:
+  - Glitter effect for makeup
+  - Glasses detection algorithm
+  - Glasses lens segmentation algorithm
+  - Glasses frame color detection algorithm
+  changes:
+  - Virtual Background segmentation improvements
+  - Face shape detection algorithm improvements
+  fixes: []
+- version: 1.17.6
+  date: '2025-09-29'
+  breaking: false
+  additions:
+  - Face shape detection
+  changes:
+  - Enhancements for various platforms and effects
+  fixes: []
+- version: 1.17.5
+  date: '2025-08-29'
+  breaking: false
+  additions:
+  - Gloss and chameleon color effects for eyeshadows
+  - Numerous enhancements for various platforms and effects
+  changes:
+  - Improved virtual background segmentation
+  fixes: []
+- version: 1.17.4
+  date: '2025-07-18'
+  breaking: false
+  additions:
+  - Gloss and chameleon color effects for makeup
+  - Numerous enhancements for various platforms and effects
+  changes:
+  - Improved Gender Recognition model
+  fixes: []
+- version: 1.17.3
+  date: '2025-06-06'
+  breaking: false
+  additions:
+  - Lips Glare effect for Windows, OSX and Emscripten
+  changes: []
+  fixes:
+  - Bug fixes and improvements for various platforms
+- version: 1.17.2
+  date: '2025-05-23'
+  breaking: false
+  additions:
+  - '"Weatherman" mode'
+  - Support for video textures in effects
+  changes:
+  - Improved background segmentation
+  - Improved hair segmentation
+  fixes:
+  - Bug fixes and improvements for various platforms
+other_products:
+- product: Video Editor SDK (Android, com.banuba.sdk:ve-sdk)
+  latest: 1.54.1
+  date: '2026-08-28'
+  source: nexus.banuba.net maven-releases
+- product: Video Editor SDK (Flutter, ve_sdk_flutter)
+  latest: 0.48.0
+  date: '2026-09-10'
+  source: pub.dev
+- product: Video Editor SDK (React Native, video-editor-react-native)
+  latest: 0.55.0
+  date: '2026-09-12'
+  source: npm
+- product: Photo Editor SDK (React Native, pe-sdk-react-native)
+  latest: 0.9.0
+  date: '2026-09-16'
+  source: npm
+- product: Agent Skills (github.com/Banuba/ai-skills)
+  latest: 0.8.0
+  date: null
+  source: README version badge; repo last pushed 2026-08-20

@@ -81,19 +81,19 @@ GLTF
 
 Nails
 
-- [On Hands prefabs](/effects/prefabs/hands.md): Nails
+- [On Hands Prefabs](/effects/prefabs/hands.md): Nails
 
 ##### makeup
 
-Basic concepts
+Basic Concepts
 
-- [Makeup Prefabs](/effects/prefabs/makeup.md): Basic concepts
+- [Makeup Prefabs](/effects/prefabs/makeup.md): Basic Concepts
 
 ##### overview
 
-Prefab is high level object that represents set of render and SDK features.
+A prefab is a high-level object that represents a set of rendering and SDK features.
 
-- [Prefabs Overview](/effects/prefabs/overview.md): Prefab is high level object that represents set of render and SDK features.
+- [Prefabs Overview](/effects/prefabs/overview.md): A prefab is a high-level object that represents a set of rendering and SDK features.
 
 ##### sounds
 
@@ -103,9 +103,9 @@ Sounds
 
 ##### sprites
 
-sprites
+Sprites
 
-- [Sprites Prefabs](/effects/prefabs/sprites.md): sprites
+- [Sprites Prefabs](/effects/prefabs/sprites.md): Sprites
 
 ##### top_level
 
@@ -331,9 +331,9 @@ MediaStreamCapture stream freezes when a browser tab becomes inactive in Safari
 
 ##### llms
 
-<GuideHero
+Use Banuba AI Skills and an AI coding agent like Claude Code to build a working Face AR Web demo in minutes.
 
-- [Build a Face AR App in Minutes with AI](/tutorials/development/llms.md): <GuideHero
+- [Build a Face AR App in Minutes with AI](/tutorials/development/llms.md): Use Banuba AI Skills and an AI coding agent like Claude Code to build a working Face AR Web demo in minutes.
 
 ##### samples
 
@@ -391,9 +391,9 @@ A guide on how to integrate video calling in a project with Banuba SDK
 
 ###### android
 
-<a
+Receive Banuba SDK camera frames as an RGBA pixel array on Android for use in a video call.
 
-- [android](/tutorials/development/videocall/android.md): <a
+- [android](/tutorials/development/videocall/android.md): Receive Banuba SDK camera frames as an RGBA pixel array on Android for use in a video call.
 
 ###### flutter
 
@@ -403,9 +403,9 @@ Due to Flutter limitations, for every videocall solution you have to create a na
 
 ###### ios
 
-<a
+Install and integrate the Banuba SDK video-call components on iOS.
 
-- [ios](/tutorials/development/videocall/ios.md): <a
+- [ios](/tutorials/development/videocall/ios.md): Install and integrate the Banuba SDK video-call components on iOS.
 
 ###### react_native
 

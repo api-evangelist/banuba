@@ -1,0 +1,56 @@
+generated: '2026-09-17'
+method: derived
+source: >-
+  Derived from what the public docs describe — https://docs.banuba.com/far-sdk/ (Face AR SDK), https://docs.banuba.com/ve-pe-sdk/llms.txt
+  (Video/Photo Editor SDK), https://github.com/Banuba/arcloud-effects-cli (AR Cloud manifest), https://tintvto.com/ (TINT widget) — and
+  from the contract-discovery probes of 2026-09-17 (no OpenAPI, GraphQL, MCP, AsyncAPI, WSDL or agent card on any host).
+surface: sdk
+summary: >-
+  Banuba's public developer surface is on-device SDKs (Face AR / WebAR, Video Editor, Photo Editor, AR Cloud) plus a
+  hosted virtual try-on widget. There is no public HTTP request/response API to hold conventions: no request
+  envelope, no pagination, no idempotency keys, no rate-limit headers, no problem details. Every runtime semantic
+  block below is therefore `na` — a statement about the surface, not a gap in the docs. The one hosted API Banuba
+  markets (AI Talking Photo API) has docs available only on request through Support, so its conventions are unknown.
+auth:
+  style: licence client token passed at SDK initialisation (see authentication/banuba-authentication.yml)
+  http_scheme: na
+idempotency:
+  coverage: na
+  scope: []
+  header: null
+  note: No HTTP write surface; SDK calls are local and synchronous. The customer-hosted AR Cloud manifest is read-only (GET /v1/effects/api_response).
+reversibility:
+  status: na
+  note: >-
+    No hosted write operations exist to reverse. Video/Photo Editor edits are local and non-destructive by design
+    (drafts are stored on-device; export writes a new file), but that is application behaviour, not an API reversal path.
+  write_surfaces: []
+dry_run_mode:
+  status: na
+pagination:
+  style: na
+field_expansion:
+  supported: na
+metadata:
+  supported: na
+request_id:
+  header: null
+  status: na
+versioning:
+  style: semver on the SDK packages; all Banuba packages in one app must share a version (installation guide)
+  header: null
+errors:
+  envelope: na
+  note: >-
+    SDK-level status enums only (e.g. BNBLicenseStatus, BNBEffectStatus, BNBProcessorStatus in the iOS reference
+    at docs.banuba.com/far-sdk/generated/jazzy/objc/Enums/). Licence failure is signalled in-app by a watermark /
+    screen blur, not by an HTTP status.
+rate_limits:
+  signaling: na
+  note: Usage is metered commercially (MAU-based SDK licences; monthly try-on quotas on TINT plans — see plans/), not enforced by HTTP throttling headers.
+cross_links:
+  authentication: authentication/banuba-authentication.yml
+  lifecycle: lifecycle/banuba-lifecycle.yml
+  plans: plans/banuba-plans-pricing.yml
+  rate_limits: rate-limits/banuba-rate-limits.yml
+  changelog: changelog/banuba-changelog.yml

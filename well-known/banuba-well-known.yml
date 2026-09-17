@@ -1,0 +1,219 @@
+generated: '2026-09-17'
+method: probed
+source: live GET of each path on every host the record knows (registrable domain, www, docs host, Tint public API
+  host); User-Agent Mozilla/5.0; 2026-09-17
+note: 'No host serves any well-known discovery document. banuba.com answers 301 to www.banuba.com for every path;
+  www.banuba.com returns its 404 page (HTTP 404, 57 KB HTML) for every path; docs.banuba.com (Docusaurus) returns
+  a real 404; api.tintvto.com (the Banuba TINT virtual try-on API host, discovered in the app.tintvto.com bundle)
+  answers {"message":"Not Found"} 404 for every path. The negative-control path also 404d on every host, so none
+  is a path-echoing catch-all. NOT a well-known path but real and served: https://www.banuba.com/llms.txt (200,
+  text/plain, 325 KB) and https://docs.banuba.com/llms.txt (200, 24 KB) — saved under llms/. Because every path
+  missed, NO WellKnown/SecurityTxt pointer is emitted: this file records an absence.'
+hosts:
+- host: https://banuba.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 301
+    file: null
+  - path: /.well-known/openid-configuration
+    status: 301
+    file: null
+  - path: /.well-known/oauth-authorization-server
+    status: 301
+    file: null
+  - path: /.well-known/oauth-protected-resource
+    status: 301
+    file: null
+  - path: /.well-known/api-catalog
+    status: 301
+    file: null
+  - path: /.well-known/api-catalog.json
+    status: 301
+    file: null
+  - path: /.well-known/ai-plugin.json
+    status: 301
+    file: null
+  - path: /.well-known/ucp.json
+    status: 301
+    file: null
+  - path: /.well-known/acp.json
+    status: 301
+    file: null
+  - path: /.well-known/aauth-resource.json
+    status: 301
+    file: null
+  - path: /.well-known/apis.json
+    status: 301
+    file: null
+  - path: /apis.json
+    status: 301
+    file: null
+  - path: /apis.yml
+    status: 301
+    file: null
+  - path: /.well-known/agent-card.json
+    status: 301
+    file: null
+  - path: /.well-known/agent.json
+    status: 301
+    file: null
+  path_echo_control: passed
+  hit_count: 0
+  note: apex 301s every path to https://www.banuba.com/<same path>; the www result is the real answer
+- host: https://www.banuba.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+    file: null
+  - path: /.well-known/openid-configuration
+    status: 404
+    file: null
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+    file: null
+  - path: /.well-known/oauth-protected-resource
+    status: 404
+    file: null
+  - path: /.well-known/api-catalog
+    status: 404
+    file: null
+  - path: /.well-known/api-catalog.json
+    status: 404
+    file: null
+  - path: /.well-known/ai-plugin.json
+    status: 404
+    file: null
+  - path: /.well-known/ucp.json
+    status: 404
+    file: null
+  - path: /.well-known/acp.json
+    status: 404
+    file: null
+  - path: /.well-known/aauth-resource.json
+    status: 404
+    file: null
+  - path: /.well-known/apis.json
+    status: 404
+    file: null
+  - path: /apis.json
+    status: 404
+    file: null
+  - path: /apis.yml
+    status: 404
+    file: null
+  - path: /.well-known/agent-card.json
+    status: 404
+    file: null
+  - path: /.well-known/agent.json
+    status: 404
+    file: null
+  path_echo_control: passed
+  hit_count: 0
+  note: HubSpot-hosted marketing site; every path returns the site 404 page (text/html, 57018 bytes)
+- host: https://docs.banuba.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+    file: null
+  - path: /.well-known/openid-configuration
+    status: 404
+    file: null
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+    file: null
+  - path: /.well-known/oauth-protected-resource
+    status: 404
+    file: null
+  - path: /.well-known/api-catalog
+    status: 404
+    file: null
+  - path: /.well-known/api-catalog.json
+    status: 404
+    file: null
+  - path: /.well-known/ai-plugin.json
+    status: 404
+    file: null
+  - path: /.well-known/ucp.json
+    status: 404
+    file: null
+  - path: /.well-known/acp.json
+    status: 404
+    file: null
+  - path: /.well-known/aauth-resource.json
+    status: 404
+    file: null
+  - path: /.well-known/apis.json
+    status: 404
+    file: null
+  - path: /apis.json
+    status: 404
+    file: null
+  - path: /apis.yml
+    status: 404
+    file: null
+  - path: /.well-known/agent-card.json
+    status: 404
+    file: null
+  - path: /.well-known/agent.json
+    status: 404
+    file: null
+  path_echo_control: passed
+  hit_count: 0
+  note: Docusaurus docs host; every path returns a real 404 (text/html, ~360 bytes)
+- host: https://api.tintvto.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+    file: null
+  - path: /.well-known/openid-configuration
+    status: 404
+    file: null
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+    file: null
+  - path: /.well-known/oauth-protected-resource
+    status: 404
+    file: null
+  - path: /.well-known/api-catalog
+    status: 404
+    file: null
+  - path: /.well-known/api-catalog.json
+    status: 404
+    file: null
+  - path: /.well-known/ai-plugin.json
+    status: 404
+    file: null
+  - path: /.well-known/ucp.json
+    status: 404
+    file: null
+  - path: /.well-known/acp.json
+    status: 404
+    file: null
+  - path: /.well-known/aauth-resource.json
+    status: 404
+    file: null
+  - path: /.well-known/apis.json
+    status: 404
+    file: null
+  - path: /apis.json
+    status: 404
+    file: null
+  - path: /apis.yml
+    status: 404
+    file: null
+  - path: /.well-known/agent-card.json
+    status: 404
+    file: null
+  - path: /.well-known/agent.json
+    status: 404
+    file: null
+  path_echo_control: passed
+  hit_count: 0
+  note: Banuba TINT virtual try-on API host (AWS API Gateway); every path returns {"message":"Not Found"} application/json
+negative_control:
+  path: /.well-known/banuba-negative-control-9c1f2a.json
+  status_by_host:
+    www.banuba.com: 404
+    docs.banuba.com: 404
+    api.tintvto.com: 404
+    banuba.com: 301
