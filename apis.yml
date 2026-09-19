@@ -126,6 +126,12 @@ apis:
     name: Banuba AI Talking Photo API
     tags:
       - Generative AI
+      - Image-to-Video
+      - Lip Sync
+      - Avatars
+      - Video Generation
+    tags_raw:
+      - Generative AI
       - Image To Video
       - Lip Sync
       - Avatars
