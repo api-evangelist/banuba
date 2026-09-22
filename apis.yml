@@ -1,6 +1,10 @@
 aid: banuba
 url: https://raw.githubusercontent.com/api-evangelist/banuba/refs/heads/main/apis.yml
 name: Banuba
+x-docs-platform: docusaurus
+x-docs-platform-confidence: medium
+x-docs-platform-checked: 2026-09-20
+x-docs-hosting: aws-cloudfront
 tags:
   - AR
   - Augmented Reality
