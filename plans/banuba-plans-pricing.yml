@@ -287,3 +287,65 @@ unpriced:
 maintainers:
 - FN: API Evangelist
   email: info@apievangelist.com
+x-canonical:
+  generated: '2026-10-08'
+  vocabulary: all/0-working/economics/plans-canonical.yml
+  models:
+  - subscription
+  units:
+  - money
+  plans:
+  - name: TINT Easy Virtual Try-On — Basic
+    access: paid
+    model: subscription
+    model_how: derived
+    units:
+    - money
+    - other
+    periods:
+    - month
+  - name: TINT Easy Virtual Try-On — Pro
+    access: paid
+    model: subscription
+    model_how: derived
+    units:
+    - money
+    - other
+    periods:
+    - month
+  - name: TINT Easy Virtual Try-On — Smart
+    access: paid
+    model: subscription
+    model_how: derived
+    units:
+    - money
+    - other
+    periods:
+    - month
+  - name: TINT Shopify app — Basic
+    access: paid
+    model: subscription
+    model_how: derived
+    units:
+    - money
+    - other
+    periods:
+    - month
+  - name: TINT Shopify app — Pro
+    access: paid
+    model: subscription
+    model_how: derived
+    units:
+    - money
+    - other
+    periods:
+    - month
+  - name: TINT Shopify app — Smart
+    access: paid
+    model: subscription
+    model_how: derived
+    units:
+    - money
+    - other
+    periods:
+    - month
