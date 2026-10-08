@@ -156,6 +156,8 @@ apis:
       SDK, but the HTTP reference is available only on request through Banuba Support (per the sample's
       README), so no base URL, contract or authentication scheme is recorded here.
 common:
+  - type: FinOps
+    url: finops/banuba-finops.yml
   - type: DomainSecurity
     url: security/banuba-domain-security.yml
   - name: Agent Skills
