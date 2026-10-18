@@ -6,6 +6,13 @@ x-docs-platform-confidence: medium
 x-docs-platform-checked: 2026-09-20
 x-docs-hosting: aws-cloudfront
 tags:
+  - Augmented Reality
+  - Beauty
+  - Face Recognition
+  - Facial
+  - SDK
+  - Video
+tags_raw:
   - AR
   - Augmented Reality
   - Beauty
@@ -58,6 +65,12 @@ apis:
   - aid: banuba:face-ar-sdk
     name: Banuba Face AR SDK
     tags:
+      - Augmented Reality
+      - Beauty Filters
+      - Face Effects
+      - Face Tracking
+      - Virtual Try-On
+    tags_raw:
       - AR
       - Augmented Reality
       - Beauty Filters
