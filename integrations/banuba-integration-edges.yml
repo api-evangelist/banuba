@@ -1,6 +1,13 @@
 generated: '2026-10-15'
 method: searched
 checked:
+- https://api.nuget.org/v3
+- https://crates.io/api/v1
+- https://proxy.golang.org
+- https://pypi.org/pypi
+- https://registry.npmjs.org
+- https://repo1.maven.org/maven2
+- https://rubygems.org/api/v1
 - shopify/integrations/shopify-integration-edges.yml
 source:
 - shopify/integrations/shopify-integration-edges.yml
@@ -23,3 +30,51 @@ edges:
   detected_by: mirror-platform-listings.py
   publisher_verified:
   - Built for Shopify
+- partner_name: npm registry
+  partner: npm
+  partner_match: register
+  type: register
+  direction: provider-built
+  category: official SDK (JavaScript/TypeScript)
+  evidence: https://www.npmjs.com/package/@banuba/agora-extension
+  channel: package-registry
+  relationship: distribution-channel
+  contract_reference:
+    register: npm registry (public registry JSON)
+    spec_file: null
+    language: JavaScript/TypeScript
+    packages:
+    - name: '@banuba/agora-extension'
+      version: 2.0.1
+      released: '2026-09-03'
+      released_field: modified
+      lapsed: false
+      page: https://www.npmjs.com/package/@banuba/agora-extension
+      repo_leg: domain:banuba.com
+      publisher_leg: email:banuba.com
+      matched_by: domain
+    - name: '@banuba/react-native'
+      version: 2.0.2
+      released: '2026-09-03'
+      released_field: modified
+      lapsed: false
+      page: https://www.npmjs.com/package/@banuba/react-native
+      repo_leg: github-org:banuba
+      publisher_leg: email:banuba.com
+      matched_by: domain
+    - name: video-editor-react-native
+      version: 0.55.2
+      released: '2026-10-09'
+      released_field: modified
+      lapsed: false
+      page: https://www.npmjs.com/package/video-editor-react-native
+      repo_leg: domain:banuba.com
+      publisher_leg: email:banuba.com
+      matched_by: domain
+    current: true
+    signal_note: 'an official package on the registry: distribution, not an integration; lapsed = no release in
+      24 months'
+    detected_by: sweep-official-sdks.py
+    detected: '2026-10-18'
+  detected_by: sweep-official-sdks.py
+  first_seen: '2026-10-18'
