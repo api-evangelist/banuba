@@ -1,5 +1,11 @@
-generated: '2026-10-15'
+generated: '2026-10-20'
 method: searched
+source:
+- shopify/integrations/shopify-integration-edges.yml
+- https://zapier.com/apps/banuba/integrations
+- https://n8n.io/integrations/banuba/
+- https://composio.dev/toolkits/banuba
+- https://monid.ai/tools/banuba
 checked:
 - https://api.nuget.org/v3
 - https://crates.io/api/v1
@@ -9,8 +15,12 @@ checked:
 - https://repo1.maven.org/maven2
 - https://rubygems.org/api/v1
 - shopify/integrations/shopify-integration-edges.yml
-source:
-- shopify/integrations/shopify-integration-edges.yml
+- https://composio.dev/toolkits/banuba
+- https://monid.ai/tools/banuba
+- https://n8n.io/integrations/banuba/
+- https://zapier.com/apps/banuba/integrations
+summary: null
+marketplace_apps: []
 edges:
 - partner_name: Shopify (own)
   partner: shopify
@@ -78,3 +88,4 @@ edges:
     detected: '2026-10-18'
   detected_by: sweep-official-sdks.py
   first_seen: '2026-10-18'
+templates: []
