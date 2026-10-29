@@ -1,4 +1,4 @@
-# Banuba (banuba)
+# Banuba
 
 <!-- API-EVANGELIST-PROVENANCE:BEGIN -->
 > ### About this repository
@@ -66,81 +66,173 @@
 
 Banuba is an AR and AI technology company providing the Face AR SDK for augmented reality face effects, beauty filters, and virtual try-on experiences. The SDK supports iOS, Android, Web (HTML5), Windows, macOS, Unity, Flutter, and React Native. Use cases include live streaming beauty filters, video conferencing face effects, selfie editing, virtual makeup try-on, and face tracking for interactive applications.
 
-**URL:** [Visit APIs.json URL](https://raw.githubusercontent.com/api-evangelist/banuba/refs/heads/main/apis.yml)
+**Areas:** Augmented Reality · Beauty · Face Recognition · Facial · SDK · Video
 
-## Tags:
+## Banuba on APIs.io
 
- - AR, Augmented Reality, Beauty, Face Recognition, Facial, SDK, Video
+Everything profiled for Banuba is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/banuba/](https://apis.io/providers/banuba/)** — or go straight to one of the APIs or properties below.
 
-## Timestamps
+### APIs (4)
 
-- **Created:** 2024-12-16
-- **Modified:** 2026-04-21
+- [Banuba Face AR SDK](https://apis.io/apis/banuba/face-ar-sdk/) — The Banuba Face AR SDK provides AR face effects, beauty filters, and face tracking for mobile (iOS/Android), web, and desktop applications. The SDK includes…
+- [Banuba Video Editor SDK](https://apis.io/apis/banuba/video-editor-sdk/) — Banuba Video Editor SDK is a complete white-label video and photo editing solution for iOS and Android with AI features including auto-clipping, captions,…
+- [Banuba Face Liveness SDK](https://apis.io/apis/banuba/face-liveness-sdk/) — Banuba Face Liveness SDK provides anti-spoofing technology that verifies a face is real and present in real time, used for identity verification and access…
+- [Banuba AI Talking Photo API](https://apis.io/apis/banuba/ai-talking-photo-api/) — Banuba's one hosted developer API: turns a single portrait image plus an audio track or script into a talking-photo video with lip-sync, facial expressions…
 
-## APIs
+### Published properties
 
-### Banuba Face AR SDK
-The Banuba Face AR SDK provides real-time AR face effects, beauty filters, and face tracking for mobile, web, and desktop applications. Tracks up to 9 faces simultaneously with 3D landmark detection, background segmentation, and a library of 1000+ customizable AR effects.
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
-**Human URL:** [https://docs.banuba.com/far-sdk/](https://docs.banuba.com/far-sdk/)
+#### Agent skills (13)
 
-#### Properties
+Agent skills built on the API.
 
-- [Documentation](https://docs.banuba.com/far-sdk/)
-- [Website](https://www.banuba.com/augmented-reality-sdk)
-- [GitHub](https://github.com/Banuba)
+- [build-photo-editor](https://apis.io/agent-skills/banuba/build-photo-editor/)
+- [build-photo-editor](https://apis.io/agent-skills/banuba/build-photo-editor-2/)
+- [build-photo-editor](https://apis.io/agent-skills/banuba/build-photo-editor-3/)
+- [build-photo-editor](https://apis.io/agent-skills/banuba/build-photo-editor-4/)
+- [build-video-editor](https://apis.io/agent-skills/banuba/build-video-editor/)
+- [build-video-editor](https://apis.io/agent-skills/banuba/build-video-editor-2/)
+- [build-video-editor](https://apis.io/agent-skills/banuba/build-video-editor-3/)
+- [build-video-editor](https://apis.io/agent-skills/banuba/build-video-editor-4/)
+- [explain-video-editor-photo-editor-docs](https://apis.io/agent-skills/banuba/explain-video-editor-photo-editor-docs/)
+- [explain-video-editor-photo-editor-docs](https://apis.io/agent-skills/banuba/explain-video-editor-photo-editor-docs-2/)
+- [explain-video-editor-photo-editor-docs](https://apis.io/agent-skills/banuba/explain-video-editor-photo-editor-docs-3/)
+- [explain-video-editor-photo-editor-docs](https://apis.io/agent-skills/banuba/explain-video-editor-photo-editor-docs-4/)
+- [far-general](https://apis.io/agent-skills/banuba/far-general/)
 
-### Banuba Video Editor SDK
-White-label video and photo editing SDK for iOS and Android with AI features including auto-clipping, captions, and AR effects.
+#### JSON Schema (2)
 
-**Human URL:** [https://www.banuba.com/video-editor-sdk](https://www.banuba.com/video-editor-sdk)
+The data models the API reads and writes.
 
-### Banuba Face Liveness SDK
-Anti-spoofing technology for real-time face liveness verification used in identity verification and access control.
+- [AREffect](https://apis.io/schemas/banuba/areffect/)
+- [BeautyFilter](https://apis.io/schemas/banuba/beautyfilter/)
 
-**Human URL:** [https://www.banuba.com/face-liveness](https://www.banuba.com/face-liveness)
+#### JSON Structure (1)
 
-## Common Properties
+Data models expressed in JSON Structure.
+
+- [Banuba Json Structure](https://apis.io/json-structure/banuba/banuba-json-structure/)
+
+#### JSON-LD (1)
+
+Linked-data contexts for the provider's vocabulary.
+
+- [Banuba Context](https://apis.io/jsonld/banuba/banuba-context/)
+
+#### Vocabulary (1)
+
+The provider's domain terms, defined.
+
+- [Banuba AR & AI SDK Vocabulary](https://apis.io/vocabularies/banuba/banuba-vocabulary/)
+
+#### Examples (2)
+
+Example requests and responses.
+
+- [Areffect Example](https://apis.io/examples/banuba/areffect-example/)
+- [Beautyfilter Example](https://apis.io/examples/banuba/beautyfilter-example/)
+
+#### Governance rules (2)
+
+Spectral rulesets for the provider's contracts.
+
+- [Banuba — jsonschema rules](https://apis.io/rules/banuba/banuba-jsonschema-spectral-rules/)
+- [Banuba API Rules](https://apis.io/rules/banuba/banuba-spectral-rules/)
+
+#### Security (2)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Banuba Authentication](https://apis.io/security/banuba/banuba-authentication/)
+- [Banuba Domain Security](https://apis.io/security/banuba/banuba-domain-security/)
+
+#### Plans and pricing (1)
+
+Published plans, tiers and prices.
+
+- [Banuba Plans Pricing](https://apis.io/plans/banuba/banuba-plans-pricing/)
+
+#### Rate limits (1)
+
+Published request limits.
+
+- [Banuba Rate Limits](https://apis.io/rate-limits/banuba/banuba-rate-limits/)
+
+#### FinOps (1)
+
+What the API costs to run, by operation.
+
+- [Banuba Finops](https://apis.io/finops/banuba/banuba-finops/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
 
 - [Website](https://www.banuba.com/)
-- [SDK Documentation](https://docs.banuba.com/)
-- [Face AR SDK Docs](https://docs.banuba.com/far-sdk/)
-- [GitHub](https://github.com/Banuba)
+- [Documentation](https://docs.banuba.com/)
+- [Getting started](https://docs.banuba.com/far-sdk/tutorials/development/basic_integration/)
+- [API reference](https://docs.banuba.com/far-sdk/api_docs/)
+- [Pricing](https://www.banuba.com/banuba-pricing-face-ar-sdk)
+- [Sign up](https://www.banuba.com/facear-sdk/face-filters#form)
+- [Support](https://www.banuba.com/support)
+- [Changelog](https://docs.banuba.com/far-sdk/tutorials/changelog/)
 - [Blog](https://www.banuba.com/blog)
-- [PrivacyPolicy](https://www.banuba.com/privacy-policy)
-- [Spectral Rules](rules/banuba-spectral-rules.yml)
-- [Vocabulary](vocabulary/banuba-vocabulary.yaml)
-- [Naftiko Capability](capabilities/face-ar.yaml)
-- [JSON-LD Context](json-ld/banuba-context.jsonld)
+- [Terms of service](https://www.banuba.com/terms)
+- [Privacy policy](https://www.banuba.com/privacy-policy)
+- [GitHub](https://github.com/Banuba)
 
-## Features
+## API Evangelist rating
 
-| Name | Description |
-|------|-------------|
-| Face AR Effects | Real-time AR face masks, filters, and accessories for live and recorded video. |
-| Beauty Filters | Skin smoothing, face reshaping, eye enlargement, and makeup filters. |
-| 3D Face Tracking | Precise 3D face landmark tracking for accurate AR effect placement (up to 9 faces). |
-| Background Segmentation | Real-time background removal and replacement for video calls. |
-| Virtual Try-On | Virtual makeup, glasses, hair color, and accessory try-on experiences. |
-| AI Face Detection | ML-powered face detection with age, gender, and emotion analysis. |
-| Cross-Platform SDK | Native SDKs for iOS, Android, Web, Windows, macOS, Unity, Flutter, and React Native. |
-| Custom Effects Builder | Banuba Studio for creating custom AR effects without coding. |
-| Face Liveness Detection | Anti-spoofing verification for identity and security applications. |
-| Video Editor SDK | White-label video editing with AI auto-clipping and captions. |
+**Kin Score 48.1** — developing · rubric 0.25.0 · scored 2026-10-23
 
-## Use Cases
+| Facet | Score |
+|---|---|
+| Discoverability | 69.6 |
+| Contract quality | 10.7 |
+| Contract governance | 23.5 |
+| Operational transparency | 18.4 |
+| Developer ergonomics | 85.7 |
+| Access clarity | 76.3 |
 
-| Name | Description |
-|------|-------------|
-| Live Streaming Beauty Filters | Real-time beauty and AR filters for live streaming platforms. |
-| Video Conferencing | Face effects and background segmentation for video call applications. |
-| Selfie and Photo Editing | Beauty retouching and AR effects for mobile photo editing apps. |
-| Virtual Makeup Try-On | AI-powered virtual makeup try-on for beauty e-commerce. |
-| Face Authentication | Face-based liveness detection and verification for security applications. |
-| Gaming and Entertainment | Face-tracked AR avatars and character animation for games. |
+**Agent readiness 8.6** — agent-aware
 
-## Maintainers
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | bearer (partial credit) |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | documented (partial credit) |
+| Event Surface Described | — |
+| Agent Skills | yes |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+| Pagination Ratio | na |
+| Operation Distinctiveness | na |
 
-**FN:** Kin Lane
+**Regulatory alignment 23.6** — AI & Biometrics
 
-**Email:** kin@apievangelist.com
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/banuba/](https://apis.io/providers/banuba/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Banuba: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/banuba/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
