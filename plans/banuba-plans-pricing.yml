@@ -1,0 +1,351 @@
+specification: API Commons Plans
+specificationVersion: '0.1'
+schema: https://raw.githubusercontent.com/api-evangelist/interface-research/main/schema/api-commons.yml#/$defs/Plans
+provider: Banuba
+providerId: banuba
+created: '2026-05-04'
+modified: '2026-09-17'
+generated: '2026-09-17'
+method: searched
+source: https://www.banuba.com/banuba-pricing-face-ar-sdk, https://www.banuba.com/blog/banuba-face-ar-sdk-pricing-guide,
+  https://www.banuba.com/blog/banuba-video-editor-sdk-pricing-guide, https://www.banuba.com/tint-makeup-virtual-try-on,
+  https://www.banuba.com/blog/banuba-tint-virtual-try-on-pricing-guide — read 2026-09-17
+tags:
+- AR
+- Augmented Reality
+- Beauty
+- Virtual Try-On
+- SDK
+- Video
+- Pricing
+description: 'Plans and pricing Banuba actually publishes, replacing the 2026-05-04 scaffold. Two different models:
+  (1) the SDKs (Face AR, Video Editor, Photo Editor) are licensed on a custom, MAU-based quote with no public price
+  list — three factors set the quote (platforms shipped on, feature categories activated, monthly active users),
+  a 14-day free trial token is offered, and there is no per-developer seat fee; (2) the TINT virtual try-on product
+  publishes six priced self-serve plans — three for the no-code Easy Virtual Try-On platform (app.tintvto.com) and
+  three for the Shopify app — metered by virtual try-on sessions per month. Custom enterprise TINT integrations
+  (WooCommerce, Wix, Cafe24, Shoptet, OpenCart, native apps) are priced per try-on on request.'
+plan_count: 6
+pricing_model:
+  sdks: custom MAU-based quote, contact sales, 14-day trial token
+  tint: self-serve monthly subscription metered by try-ons
+plans:
+- id: tint-easy-basic
+  name: TINT Easy Virtual Try-On — Basic
+  type: paid
+  description: Small businesses and startups testing virtual try-on before scaling.
+  price: 49
+  currency: USD
+  billingPeriod: 30 days (recurring)
+  trial: 14-day free trial
+  entries:
+  - label: Virtual try-ons
+    description: Up to 1,000 virtual try-on sessions per month
+    name: virtual_try_ons
+    type: quota
+    metric: try_ons
+    limit: 1000
+    timeFrame: month
+    geo: global
+    domains: []
+    unit: 1
+    price: 49
+    userMultiplied: false
+  - label: Subscription
+    description: $49 per month, billed in USD every 30 days
+    name: subscription
+    type: fee
+    metric: usd
+    limit: null
+    timeFrame: month
+    geo: global
+    domains: []
+    unit: 1
+    price: 49
+    userMultiplied: false
+  elements:
+  - name: Unlimited products in the catalog
+  - name: Makeup & eyewear try-on
+  - name: AI auto-digitization
+  - name: Try-on via URL + QR code
+  - name: Usage analytics
+  - name: 14-day free trial
+  source: https://www.banuba.com/blog/banuba-tint-virtual-try-on-pricing-guide
+- id: tint-easy-pro
+  name: TINT Easy Virtual Try-On — Pro
+  type: paid
+  description: Growing brands with steady catalog traffic (the plan most stores pick).
+  price: 99
+  currency: USD
+  billingPeriod: 30 days (recurring)
+  trial: 14-day free trial
+  entries:
+  - label: Virtual try-ons
+    description: Up to 3,500 virtual try-on sessions per month
+    name: virtual_try_ons
+    type: quota
+    metric: try_ons
+    limit: 3500
+    timeFrame: month
+    geo: global
+    domains: []
+    unit: 1
+    price: 99
+    userMultiplied: false
+  - label: Subscription
+    description: $99 per month, billed in USD every 30 days
+    name: subscription
+    type: fee
+    metric: usd
+    limit: null
+    timeFrame: month
+    geo: global
+    domains: []
+    unit: 1
+    price: 99
+    userMultiplied: false
+  elements:
+  - name: Everything in Basic
+  - name: Unlimited products
+  - name: 14-day free trial
+  source: https://www.banuba.com/blog/banuba-tint-virtual-try-on-pricing-guide
+- id: tint-easy-smart
+  name: TINT Easy Virtual Try-On — Smart
+  type: paid
+  description: High-volume stores with seasonal spikes.
+  price: 349
+  currency: USD
+  billingPeriod: 30 days (recurring)
+  trial: 14-day free trial
+  entries:
+  - label: Virtual try-ons
+    description: Up to 15,000 virtual try-on sessions per month
+    name: virtual_try_ons
+    type: quota
+    metric: try_ons
+    limit: 15000
+    timeFrame: month
+    geo: global
+    domains: []
+    unit: 1
+    price: 349
+    userMultiplied: false
+  - label: Subscription
+    description: $349 per month, billed in USD every 30 days
+    name: subscription
+    type: fee
+    metric: usd
+    limit: null
+    timeFrame: month
+    geo: global
+    domains: []
+    unit: 1
+    price: 349
+    userMultiplied: false
+  elements:
+  - name: Everything in Pro
+  - name: Unlimited products
+  - name: 14-day free trial
+  source: https://www.banuba.com/blog/banuba-tint-virtual-try-on-pricing-guide
+- id: tint-shopify-basic
+  name: TINT Shopify app — Basic
+  type: paid
+  description: Shopify-native embedded product-page try-on.
+  price: 319
+  currency: USD
+  billingPeriod: 30 days (recurring)
+  trial: 14-day free trial
+  entries:
+  - label: Virtual try-ons
+    description: Up to 10,000 virtual try-on sessions per month
+    name: virtual_try_ons
+    type: quota
+    metric: try_ons
+    limit: 10000
+    timeFrame: month
+    geo: global
+    domains: []
+    unit: 1
+    price: 319
+    userMultiplied: false
+  - label: Subscription
+    description: $319 per month, billed in USD every 30 days
+    name: subscription
+    type: fee
+    metric: usd
+    limit: null
+    timeFrame: month
+    geo: global
+    domains: []
+    unit: 1
+    price: 319
+    userMultiplied: false
+  elements:
+  - name: All four categories (makeup, eyewear, contacts, hair dye)
+  - name: Realistic AR across skin tones
+  - name: Multi-model previews
+  - name: Product configuration in the Shopify admin
+  - name: Usage analytics
+  - name: 14-day free trial
+  source: https://www.banuba.com/blog/banuba-tint-virtual-try-on-pricing-guide
+- id: tint-shopify-pro
+  name: TINT Shopify app — Pro
+  type: paid
+  description: Higher traffic ceiling for catalog peaks.
+  price: 999
+  currency: USD
+  billingPeriod: 30 days (recurring)
+  trial: 14-day free trial
+  entries:
+  - label: Virtual try-ons
+    description: Up to 40,000 virtual try-on sessions per month
+    name: virtual_try_ons
+    type: quota
+    metric: try_ons
+    limit: 40000
+    timeFrame: month
+    geo: global
+    domains: []
+    unit: 1
+    price: 999
+    userMultiplied: false
+  - label: Subscription
+    description: $999 per month, billed in USD every 30 days
+    name: subscription
+    type: fee
+    metric: usd
+    limit: null
+    timeFrame: month
+    geo: global
+    domains: []
+    unit: 1
+    price: 999
+    userMultiplied: false
+  elements:
+  - name: Everything in Basic
+  source: https://www.banuba.com/blog/banuba-tint-virtual-try-on-pricing-guide
+- id: tint-shopify-smart
+  name: TINT Shopify app — Smart
+  type: paid
+  description: Highest self-serve Shopify tier.
+  price: 1599
+  currency: USD
+  billingPeriod: 30 days (recurring)
+  trial: 14-day free trial
+  entries:
+  - label: Virtual try-ons
+    description: Up to 70,000 virtual try-on sessions per month
+    name: virtual_try_ons
+    type: quota
+    metric: try_ons
+    limit: 70000
+    timeFrame: month
+    geo: global
+    domains: []
+    unit: 1
+    price: 1599
+    userMultiplied: false
+  - label: Subscription
+    description: $1599 per month, billed in USD every 30 days
+    name: subscription
+    type: fee
+    metric: usd
+    limit: null
+    timeFrame: month
+    geo: global
+    domains: []
+    unit: 1
+    price: 1599
+    userMultiplied: false
+  elements:
+  - name: Everything in Pro
+  - name: Priority support
+  source: https://www.banuba.com/blog/banuba-tint-virtual-try-on-pricing-guide
+unpriced:
+- id: face-ar-sdk-licence
+  name: Face AR SDK licence
+  type: custom
+  pricing: MAU-based quote; no public tiers; web licences domain-bound, mobile app-bound; auto-renews while in use
+  trial: 14-day demo token (all features)
+  source: https://www.banuba.com/blog/banuba-face-ar-sdk-pricing-guide
+- id: video-editor-sdk-licence
+  name: Video Editor SDK licence
+  type: custom
+  pricing: MAU-based quote; no public price list; no per-developer seat fee; no per-export charge
+  trial: free trial token
+  source: https://www.banuba.com/blog/banuba-video-editor-sdk-pricing-guide
+- id: tint-enterprise
+  name: TINT custom integration
+  type: custom
+  pricing: priced per try-on session per month, on request
+  source: https://www.banuba.com/blog/banuba-tint-virtual-try-on-pricing-guide
+- id: ai-talking-photo-api
+  name: AI Talking Photo API
+  type: custom
+  pricing: contact sales; docs on request
+  source: https://www.banuba.com/ai-talking-photo-api
+maintainers:
+- FN: API Evangelist
+  email: info@apievangelist.com
+x-canonical:
+  generated: '2026-11-01'
+  vocabulary: engine/economics/plans-canonical.yml
+  models:
+  - subscription
+  units:
+  - money
+  plans:
+  - name: TINT Easy Virtual Try-On — Basic
+    access: paid
+    model: subscription
+    model_how: derived
+    units:
+    - money
+    - other
+    periods:
+    - month
+  - name: TINT Easy Virtual Try-On — Pro
+    access: paid
+    model: subscription
+    model_how: derived
+    units:
+    - money
+    - other
+    periods:
+    - month
+  - name: TINT Easy Virtual Try-On — Smart
+    access: paid
+    model: subscription
+    model_how: derived
+    units:
+    - money
+    - other
+    periods:
+    - month
+  - name: TINT Shopify app — Basic
+    access: paid
+    model: subscription
+    model_how: derived
+    units:
+    - money
+    - other
+    periods:
+    - month
+  - name: TINT Shopify app — Pro
+    access: paid
+    model: subscription
+    model_how: derived
+    units:
+    - money
+    - other
+    periods:
+    - month
+  - name: TINT Shopify app — Smart
+    access: paid
+    model: subscription
+    model_how: derived
+    units:
+    - money
+    - other
+    periods:
+    - month
